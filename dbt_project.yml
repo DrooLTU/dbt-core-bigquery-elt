@@ -1,0 +1,14 @@
+name: turing_sales
+
+version: 1.0.0
+
+model-paths:
+  - models
+
+target-path: target
+
+profile: dev-bigquery
+
+vars:
+  dbt_user: root
+  dbt_password: password

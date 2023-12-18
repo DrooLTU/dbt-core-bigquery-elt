@@ -1,0 +1,10 @@
+dev-bigquery:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: turing-job-ad-project
+      dataset: turing_dbt_sales
+      threads: 4 # Must be a value of 1 or greater
+      keyfile: ./turing-job-ad-project-a568fd18c421.json

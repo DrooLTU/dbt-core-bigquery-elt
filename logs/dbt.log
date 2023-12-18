@@ -1,0 +1,131 @@
+[0m16:27:27.866257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002503DBC25C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250409C2BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250409C33D0>]}
+
+
+============================== 16:27:27.870264 | 55b6e2f2-eac9-47ed-9778-6dd4df4df07e ==============================
+[0m16:27:27.870264 [info ] [MainThread]: Running with dbt=1.7.4
+[0m16:27:27.871263 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Justinas\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:27:27.872262 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\Documents\DE course\M3_S2\jukaral-DE3.2.5\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:27:27.873264 [debug] [MainThread]: Command `dbt run` failed at 16:27:27.873264 after 0.02 seconds
+[0m16:27:27.874264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002503DBC25C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025039B73340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250409C3460>]}
+[0m16:27:27.874264 [debug] [MainThread]: Flushing usage events
+[0m16:28:23.298020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E7583B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E786A2D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E786A0610>]}
+
+
+============================== 16:28:23.302525 | d80f01d9-b881-46eb-a637-7a2f8c9025b1 ==============================
+[0m16:28:23.302525 [info ] [MainThread]: Running with dbt=1.7.4
+[0m16:28:23.302525 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'debug': 'False', 'warn_error': 'None', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:28:23.305037 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  E:\Documents\DE course\M3_S2\jukaral-DE3.2.5/profiles.yml
+  
+[0m16:28:23.307039 [debug] [MainThread]: Command `dbt run` failed at 16:28:23.307039 after 0.06 seconds
+[0m16:28:23.308036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E7583B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E786A0340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E786A0610>]}
+[0m16:28:23.308036 [debug] [MainThread]: Flushing usage events
+[0m16:32:04.532540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D6E54B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D713B5270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D713B72E0>]}
+
+
+============================== 16:32:04.536541 | 14bb26f1-5c7b-41ec-9909-412283895355 ==============================
+[0m16:32:04.536541 [info ] [MainThread]: Running with dbt=1.7.4
+[0m16:32:04.537540 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:32:05.101896 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m16:32:05.102903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '14bb26f1-5c7b-41ec-9909-412283895355', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D71EBD090>]}
+[0m16:32:05.238257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '14bb26f1-5c7b-41ec-9909-412283895355', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D6EB9AFE0>]}
+[0m16:32:05.340535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '14bb26f1-5c7b-41ec-9909-412283895355', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D7208D600>]}
+[0m16:32:05.342548 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m16:32:05.358597 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m16:32:05.360598 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:32:05.361810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '14bb26f1-5c7b-41ec-9909-412283895355', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D71FD5480>]}
+[0m16:32:07.145281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '14bb26f1-5c7b-41ec-9909-412283895355', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D723B05B0>]}
+[0m16:32:07.162722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '14bb26f1-5c7b-41ec-9909-412283895355', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D72356680>]}
+[0m16:32:07.163724 [info ] [MainThread]: Found 1 seed, 0 sources, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m16:32:07.164722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '14bb26f1-5c7b-41ec-9909-412283895355', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D72356500>]}
+[0m16:32:07.165724 [info ] [MainThread]: 
+[0m16:32:07.166722 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:32:07.167722 [debug] [MainThread]: Command end result
+[0m16:32:07.239363 [debug] [MainThread]: Command `dbt run` succeeded at 16:32:07.239363 after 2.78 seconds
+[0m16:32:07.240870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D6E54B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D719A9ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D72356380>]}
+[0m16:32:07.240870 [debug] [MainThread]: Flushing usage events
+[0m16:35:12.442329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021468EFB7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146BD618A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146BD632E0>]}
+
+
+============================== 16:35:12.446414 | c716c8b7-7283-433d-9811-e18c2d1b85f4 ==============================
+[0m16:35:12.446414 [info ] [MainThread]: Running with dbt=1.7.4
+[0m16:35:12.446414 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'debug': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt seed', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:35:13.057907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c716c8b7-7283-433d-9811-e18c2d1b85f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146954BC10>]}
+[0m16:35:13.155369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c716c8b7-7283-433d-9811-e18c2d1b85f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146C896E90>]}
+[0m16:35:13.157374 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m16:35:13.167760 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m16:35:13.185323 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:35:13.186323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c716c8b7-7283-433d-9811-e18c2d1b85f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146C983A90>]}
+[0m16:35:14.338904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c716c8b7-7283-433d-9811-e18c2d1b85f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146CD30AC0>]}
+[0m16:35:14.347423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c716c8b7-7283-433d-9811-e18c2d1b85f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146CD309A0>]}
+[0m16:35:14.348425 [info ] [MainThread]: Found 1 seed, 0 sources, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m16:35:14.348425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c716c8b7-7283-433d-9811-e18c2d1b85f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146CD30B20>]}
+[0m16:35:14.350423 [info ] [MainThread]: 
+[0m16:35:14.351422 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:35:14.353422 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m16:35:14.353422 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:35:15.160792 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_turing-job-ad-project, now create_turing-job-ad-project_turing_dbt_sales)
+[0m16:35:15.161790 [debug] [ThreadPool]: Creating schema "database: "turing-job-ad-project"
+schema: "turing_dbt_sales"
+"
+[0m16:35:15.171301 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:35:15.172302 [debug] [ThreadPool]: On create_turing-job-ad-project_turing_dbt_sales: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "connection_name": "create_turing-job-ad-project_turing_dbt_sales"} */
+create schema if not exists `turing-job-ad-project`.`turing_dbt_sales`
+  
+[0m16:35:16.518046 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:fe2fcf2b-9a3e-4d75-82a4-21cc155e93bc&page=queryresults
+[0m16:35:17.355076 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales'
+[0m16:35:17.356507 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:35:18.073003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c716c8b7-7283-433d-9811-e18c2d1b85f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146CB936A0>]}
+[0m16:35:18.074001 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:35:18.075504 [info ] [MainThread]: 
+[0m16:35:18.079516 [debug] [Thread-1 (]: Began running node seed.turing_sales.superstore_final_dataset
+[0m16:35:18.080515 [info ] [Thread-1 (]: 1 of 1 START seed file turing_dbt_sales.superstore_final_dataset ............... [RUN]
+[0m16:35:18.081514 [debug] [Thread-1 (]: Acquiring new bigquery connection 'seed.turing_sales.superstore_final_dataset'
+[0m16:35:18.081514 [debug] [Thread-1 (]: Began compiling node seed.turing_sales.superstore_final_dataset
+[0m16:35:18.082517 [debug] [Thread-1 (]: Timing info for seed.turing_sales.superstore_final_dataset (compile): 16:35:18.082517 => 16:35:18.082517
+[0m16:35:18.082517 [debug] [Thread-1 (]: Began executing node seed.turing_sales.superstore_final_dataset
+[0m16:35:18.103550 [debug] [Thread-1 (]: Timing info for seed.turing_sales.superstore_final_dataset (execute): 16:35:18.083514 => 16:35:18.103550
+[0m16:35:18.116574 [debug] [Thread-1 (]: Compilation Error in seed superstore_final_dataset (seeds\superstore_final_dataset.csv)
+  'utf-8' codec can't decode byte 0xa0 in position 2786: invalid start byte
+  
+  > in macro materialization_seed_default (macros\materializations\seeds\seed.sql)
+  > called by seed superstore_final_dataset (seeds\superstore_final_dataset.csv)
+[0m16:35:18.117581 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c716c8b7-7283-433d-9811-e18c2d1b85f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146CD8A470>]}
+[0m16:35:18.117581 [error] [Thread-1 (]: 1 of 1 ERROR loading seed file turing_dbt_sales.superstore_final_dataset ....... [[31mERROR[0m in 0.04s]
+[0m16:35:18.119581 [debug] [Thread-1 (]: Finished running node seed.turing_sales.superstore_final_dataset
+[0m16:35:18.121580 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:35:18.121580 [debug] [MainThread]: Connection 'create_turing-job-ad-project_turing_dbt_sales' was properly closed.
+[0m16:35:18.122583 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales' was properly closed.
+[0m16:35:18.122583 [debug] [MainThread]: Connection 'seed.turing_sales.superstore_final_dataset' was properly closed.
+[0m16:35:18.123579 [info ] [MainThread]: 
+[0m16:35:18.123579 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 3.77 seconds (3.77s).
+[0m16:35:18.125085 [debug] [MainThread]: Command end result
+[0m16:35:18.135094 [info ] [MainThread]: 
+[0m16:35:18.136451 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:35:18.137457 [info ] [MainThread]: 
+[0m16:35:18.137457 [error] [MainThread]:   Compilation Error in seed superstore_final_dataset (seeds\superstore_final_dataset.csv)
+  'utf-8' codec can't decode byte 0xa0 in position 2786: invalid start byte
+  
+  > in macro materialization_seed_default (macros\materializations\seeds\seed.sql)
+  > called by seed superstore_final_dataset (seeds\superstore_final_dataset.csv)
+[0m16:35:18.138457 [info ] [MainThread]: 
+[0m16:35:18.138457 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:35:18.140457 [debug] [MainThread]: Command `dbt seed` failed at 16:35:18.140457 after 5.76 seconds
+[0m16:35:18.140457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021468EFB7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146C9F34C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146CD30AF0>]}
+[0m16:35:18.141457 [debug] [MainThread]: Flushing usage events
