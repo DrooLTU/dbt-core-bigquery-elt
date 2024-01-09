@@ -129,3 +129,1731 @@ create schema if not exists `turing-job-ad-project`.`turing_dbt_sales`
 [0m16:35:18.140457 [debug] [MainThread]: Command `dbt seed` failed at 16:35:18.140457 after 5.76 seconds
 [0m16:35:18.140457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021468EFB7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146C9F34C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146CD30AF0>]}
 [0m16:35:18.141457 [debug] [MainThread]: Flushing usage events
+[0m17:52:18.085144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027010FEB820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027013E52C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027013E525F0>]}
+
+
+============================== 17:52:18.089656 | cd697434-5e1e-4bc2-83d4-e61929a5e008 ==============================
+[0m17:52:18.089656 [info ] [MainThread]: Running with dbt=1.7.4
+[0m17:52:18.090659 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'debug': 'False', 'version_check': 'True', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:52:18.709452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cd697434-5e1e-4bc2-83d4-e61929a5e008', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027011633700>]}
+[0m17:52:18.810728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cd697434-5e1e-4bc2-83d4-e61929a5e008', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000270149895D0>]}
+[0m17:52:18.812729 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m17:52:18.821241 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m17:52:18.915545 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m17:52:18.916545 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\marts\sales\superstore_final_dataset.sql
+[0m17:52:19.073871 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two resources with the database representation "`turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`".
+  dbt cannot create two resources with identical database representations. To fix this,
+  change the configuration of one of these resources:
+  - seed.turing_sales.superstore_final_dataset (seeds\superstore_final_dataset.csv)
+  - model.turing_sales.superstore_final_dataset (models\marts\sales\superstore_final_dataset.sql)
+[0m17:52:19.076386 [debug] [MainThread]: Command `dbt compile` failed at 17:52:19.076386 after 1.05 seconds
+[0m17:52:19.076386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027010FEB820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027014D349D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000270149952A0>]}
+[0m17:52:19.077392 [debug] [MainThread]: Flushing usage events
+[0m17:53:37.573896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289D17F2590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289D4645210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289D4647A30>]}
+
+
+============================== 17:53:37.578413 | fe130407-07fc-4c28-b326-ca8101ff04b9 ==============================
+[0m17:53:37.578413 [info ] [MainThread]: Running with dbt=1.7.4
+[0m17:53:37.578413 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:53:38.215163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fe130407-07fc-4c28-b326-ca8101ff04b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289D2184D30>]}
+[0m17:53:38.310407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fe130407-07fc-4c28-b326-ca8101ff04b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289D51749D0>]}
+[0m17:53:38.311408 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m17:53:38.320927 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m17:53:38.411117 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:53:38.412142 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\marts\sales\superstore_final_dataset.sql
+[0m17:53:38.562859 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two resources with the database representation "`turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`".
+  dbt cannot create two resources with identical database representations. To fix this,
+  change the configuration of one of these resources:
+  - seed.turing_sales.superstore_final_dataset (seeds\superstore_final_dataset.csv)
+  - model.turing_sales.superstore_final_dataset (models\marts\sales\superstore_final_dataset.sql)
+[0m17:53:38.566859 [debug] [MainThread]: Command `dbt run` failed at 17:53:38.565862 after 1.05 seconds
+[0m17:53:38.566859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289D17F2590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289D5553250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289D534E350>]}
+[0m17:53:38.567362 [debug] [MainThread]: Flushing usage events
+[0m17:54:21.586505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91B2FB7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91E165270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91E1672E0>]}
+
+
+============================== 17:54:21.589503 | 3770713c-e84a-41e9-bc4e-fd74519386ee ==============================
+[0m17:54:21.589503 [info ] [MainThread]: Running with dbt=1.7.4
+[0m17:54:21.590503 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:54:22.203813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3770713c-e84a-41e9-bc4e-fd74519386ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91B94AFE0>]}
+[0m17:54:22.305671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3770713c-e84a-41e9-bc4e-fd74519386ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91EC95600>]}
+[0m17:54:22.307668 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m17:54:22.317182 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m17:54:22.404891 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 0 files added, 0 files changed.
+[0m17:54:22.405895 [debug] [MainThread]: Partial parsing: deleted file: turing_sales://seeds\superstore_final_dataset.csv
+[0m17:54:22.416403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3770713c-e84a-41e9-bc4e-fd74519386ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91F086890>]}
+[0m17:54:22.425916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3770713c-e84a-41e9-bc4e-fd74519386ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91F03C790>]}
+[0m17:54:22.425916 [info ] [MainThread]: Found 1 model, 0 sources, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m17:54:22.426918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3770713c-e84a-41e9-bc4e-fd74519386ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91F03C9A0>]}
+[0m17:54:22.427916 [info ] [MainThread]: 
+[0m17:54:22.428917 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:54:22.430916 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m17:54:22.430916 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:54:23.289216 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales'
+[0m17:54:23.289216 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:54:23.983505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3770713c-e84a-41e9-bc4e-fd74519386ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91ECA1030>]}
+[0m17:54:23.984503 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:54:23.985503 [info ] [MainThread]: 
+[0m17:54:23.988504 [debug] [Thread-1 (]: Began running node model.turing_sales.superstore_final_dataset
+[0m17:54:23.988504 [info ] [Thread-1 (]: 1 of 1 START sql table model turing_dbt_sales.superstore_final_dataset ......... [RUN]
+[0m17:54:23.989504 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.superstore_final_dataset'
+[0m17:54:23.990503 [debug] [Thread-1 (]: Began compiling node model.turing_sales.superstore_final_dataset
+[0m17:54:23.999020 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.superstore_final_dataset"
+[0m17:54:24.001020 [debug] [Thread-1 (]: Timing info for model.turing_sales.superstore_final_dataset (compile): 17:54:23.990503 => 17:54:24.001020
+[0m17:54:24.001020 [debug] [Thread-1 (]: Began executing node model.turing_sales.superstore_final_dataset
+[0m17:54:24.020068 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:54:25.048853 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.superstore_final_dataset"
+[0m17:54:25.049856 [debug] [Thread-1 (]: On model.turing_sales.superstore_final_dataset: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.superstore_final_dataset"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select * from `turing-job-ad-project.turing_dbt_sales.superstore_final_dataset`;
+    );
+  
+[0m17:54:25.425498 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:83504743-ebde-41a4-a833-d6f123536167&page=queryresults
+[0m17:54:25.425498 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got ";" at [15:80]')
+[0m17:54:26.529107 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:7bbdb0db-27ce-40c7-a295-b1a3bfacf701&page=queryresults
+[0m17:54:26.530107 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:7bbdb0db-27ce-40c7-a295-b1a3bfacf701&page=queryresults
+[0m17:54:26.531110 [debug] [Thread-1 (]: Timing info for model.turing_sales.superstore_final_dataset (execute): 17:54:24.001020 => 17:54:26.531110
+[0m17:54:26.546131 [debug] [Thread-1 (]: Database Error in model superstore_final_dataset (models\marts\sales\superstore_final_dataset.sql)
+  Syntax error: Expected ")" but got ";" at [15:80]
+  compiled Code at target\run\turing_sales\models\marts\sales\superstore_final_dataset.sql
+[0m17:54:26.546131 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3770713c-e84a-41e9-bc4e-fd74519386ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91F084160>]}
+[0m17:54:26.547132 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model turing_dbt_sales.superstore_final_dataset  [[31mERROR[0m in 2.56s]
+[0m17:54:26.548134 [debug] [Thread-1 (]: Finished running node model.turing_sales.superstore_final_dataset
+[0m17:54:26.550132 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:54:26.550132 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m17:54:26.551134 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales' was properly closed.
+[0m17:54:26.551134 [debug] [MainThread]: Connection 'model.turing_sales.superstore_final_dataset' was properly closed.
+[0m17:54:26.551134 [info ] [MainThread]: 
+[0m17:54:26.552642 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.12 seconds (4.12s).
+[0m17:54:26.553653 [debug] [MainThread]: Command end result
+[0m17:54:26.572678 [info ] [MainThread]: 
+[0m17:54:26.573183 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:54:26.574187 [info ] [MainThread]: 
+[0m17:54:26.575191 [error] [MainThread]:   Database Error in model superstore_final_dataset (models\marts\sales\superstore_final_dataset.sql)
+  Syntax error: Expected ")" but got ";" at [15:80]
+  compiled Code at target\run\turing_sales\models\marts\sales\superstore_final_dataset.sql
+[0m17:54:26.575191 [info ] [MainThread]: 
+[0m17:54:26.576191 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:54:26.577191 [debug] [MainThread]: Command `dbt run` failed at 17:54:26.577191 after 5.05 seconds
+[0m17:54:26.578193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91B2FB7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91F10B400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B91F10B0A0>]}
+[0m17:54:26.578193 [debug] [MainThread]: Flushing usage events
+[0m17:56:00.240712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185AE52590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185DCA2BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185DCA3A30>]}
+
+
+============================== 17:56:00.244710 | 8c83c699-6df3-4d92-8802-49fceb9076ba ==============================
+[0m17:56:00.244710 [info ] [MainThread]: Running with dbt=1.7.4
+[0m17:56:00.246071 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'version_check': 'True', 'debug': 'False', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt compile', 'send_anonymous_usage_stats': 'True'}
+[0m17:56:00.849004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c83c699-6df3-4d92-8802-49fceb9076ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185B7E4D30>]}
+[0m17:56:00.953436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c83c699-6df3-4d92-8802-49fceb9076ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185E7DA680>]}
+[0m17:56:00.954940 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m17:56:00.965448 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m17:56:01.058805 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:56:01.058805 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\marts\sales\superstore_final_dataset.sql
+[0m17:56:01.207016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c83c699-6df3-4d92-8802-49fceb9076ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185ED000D0>]}
+[0m17:56:01.215129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c83c699-6df3-4d92-8802-49fceb9076ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185EB886D0>]}
+[0m17:56:01.215129 [info ] [MainThread]: Found 1 model, 0 sources, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m17:56:01.216596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c83c699-6df3-4d92-8802-49fceb9076ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185EB88850>]}
+[0m17:56:01.217595 [info ] [MainThread]: 
+[0m17:56:01.219526 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:56:01.220597 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales'
+[0m17:56:01.221483 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:56:02.145208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c83c699-6df3-4d92-8802-49fceb9076ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185E7E6530>]}
+[0m17:56:02.145208 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:56:02.146215 [info ] [MainThread]: 
+[0m17:56:02.150216 [debug] [Thread-1 (]: Began running node model.turing_sales.superstore_final_dataset
+[0m17:56:02.151214 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.superstore_final_dataset'
+[0m17:56:02.151214 [debug] [Thread-1 (]: Began compiling node model.turing_sales.superstore_final_dataset
+[0m17:56:02.159561 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.superstore_final_dataset"
+[0m17:56:02.160560 [debug] [Thread-1 (]: Timing info for model.turing_sales.superstore_final_dataset (compile): 17:56:02.151214 => 17:56:02.160560
+[0m17:56:02.161562 [debug] [Thread-1 (]: Began executing node model.turing_sales.superstore_final_dataset
+[0m17:56:02.161562 [debug] [Thread-1 (]: Timing info for model.turing_sales.superstore_final_dataset (execute): 17:56:02.161562 => 17:56:02.161562
+[0m17:56:02.163563 [debug] [Thread-1 (]: Finished running node model.turing_sales.superstore_final_dataset
+[0m17:56:02.163563 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:56:02.165069 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales' was properly closed.
+[0m17:56:02.165069 [debug] [MainThread]: Connection 'model.turing_sales.superstore_final_dataset' was properly closed.
+[0m17:56:02.166077 [debug] [MainThread]: Command end result
+[0m17:56:02.180592 [debug] [MainThread]: Command `dbt compile` succeeded at 17:56:02.180592 after 2.00 seconds
+[0m17:56:02.181590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185AE52590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185E7DA680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001185E7E7730>]}
+[0m17:56:02.181590 [debug] [MainThread]: Flushing usage events
+[0m17:56:08.743123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E84FC4B820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E852AC52D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E852AC5930>]}
+
+
+============================== 17:56:08.747635 | df1b7c77-2d77-4859-98fc-5446774a8668 ==============================
+[0m17:56:08.747635 [info ] [MainThread]: Running with dbt=1.7.4
+[0m17:56:08.748643 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:56:09.351080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'df1b7c77-2d77-4859-98fc-5446774a8668', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E85029B700>]}
+[0m17:56:09.450698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'df1b7c77-2d77-4859-98fc-5446774a8668', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8535F7BB0>]}
+[0m17:56:09.451748 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m17:56:09.464273 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m17:56:09.551396 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:56:09.551396 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:56:09.556905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'df1b7c77-2d77-4859-98fc-5446774a8668', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8539DA680>]}
+[0m17:56:09.569008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'df1b7c77-2d77-4859-98fc-5446774a8668', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8539A02E0>]}
+[0m17:56:09.570006 [info ] [MainThread]: Found 1 model, 0 sources, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m17:56:09.571008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df1b7c77-2d77-4859-98fc-5446774a8668', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8539A0460>]}
+[0m17:56:09.572006 [info ] [MainThread]: 
+[0m17:56:09.573007 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:56:09.575010 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m17:56:09.576007 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:56:10.290453 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales'
+[0m17:56:10.291453 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:56:11.151036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df1b7c77-2d77-4859-98fc-5446774a8668', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8536E58A0>]}
+[0m17:56:11.152035 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:56:11.153035 [info ] [MainThread]: 
+[0m17:56:11.156035 [debug] [Thread-1 (]: Began running node model.turing_sales.superstore_final_dataset
+[0m17:56:11.156539 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales.superstore_final_dataset .......... [RUN]
+[0m17:56:11.157546 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.superstore_final_dataset'
+[0m17:56:11.158551 [debug] [Thread-1 (]: Began compiling node model.turing_sales.superstore_final_dataset
+[0m17:56:11.166060 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.superstore_final_dataset"
+[0m17:56:11.167069 [debug] [Thread-1 (]: Timing info for model.turing_sales.superstore_final_dataset (compile): 17:56:11.158551 => 17:56:11.166060
+[0m17:56:11.167069 [debug] [Thread-1 (]: Began executing node model.turing_sales.superstore_final_dataset
+[0m17:56:11.192102 [debug] [Thread-1 (]: Timing info for model.turing_sales.superstore_final_dataset (execute): 17:56:11.168068 => 17:56:11.192102
+[0m17:56:11.195101 [debug] [Thread-1 (]: Compilation Error in model superstore_final_dataset (models\marts\sales\superstore_final_dataset.sql)
+  Trying to create view `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`, but it currently exists as a table. Either drop `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model superstore_final_dataset (models\marts\sales\superstore_final_dataset.sql)
+[0m17:56:11.196101 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df1b7c77-2d77-4859-98fc-5446774a8668', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8539D1240>]}
+[0m17:56:11.196101 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model turing_dbt_sales.superstore_final_dataset . [[31mERROR[0m in 0.04s]
+[0m17:56:11.198276 [debug] [Thread-1 (]: Finished running node model.turing_sales.superstore_final_dataset
+[0m17:56:11.200277 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:56:11.200277 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m17:56:11.201274 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales' was properly closed.
+[0m17:56:11.201274 [debug] [MainThread]: Connection 'model.turing_sales.superstore_final_dataset' was properly closed.
+[0m17:56:11.202273 [info ] [MainThread]: 
+[0m17:56:11.202273 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.63 seconds (1.63s).
+[0m17:56:11.203278 [debug] [MainThread]: Command end result
+[0m17:56:11.211787 [info ] [MainThread]: 
+[0m17:56:11.212787 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:56:11.213788 [info ] [MainThread]: 
+[0m17:56:11.214788 [error] [MainThread]:   Compilation Error in model superstore_final_dataset (models\marts\sales\superstore_final_dataset.sql)
+  Trying to create view `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`, but it currently exists as a table. Either drop `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model superstore_final_dataset (models\marts\sales\superstore_final_dataset.sql)
+[0m17:56:11.216294 [info ] [MainThread]: 
+[0m17:56:11.216294 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:56:11.218306 [debug] [MainThread]: Command `dbt run` failed at 17:56:11.218306 after 2.53 seconds
+[0m17:56:11.218306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E84FC4B820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E853A4A350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E853987D30>]}
+[0m17:56:11.219304 [debug] [MainThread]: Flushing usage events
+[0m17:57:31.124757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D1F7FB760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D226650F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D22667130>]}
+
+
+============================== 17:57:31.128268 | 39063d5a-c306-44c2-9e6b-6a6a38cfd7a1 ==============================
+[0m17:57:31.128268 [info ] [MainThread]: Running with dbt=1.7.4
+[0m17:57:31.129273 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'debug': 'False', 'version_check': 'True', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:57:31.745118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '39063d5a-c306-44c2-9e6b-6a6a38cfd7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D231A24D0>]}
+[0m17:57:31.845168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '39063d5a-c306-44c2-9e6b-6a6a38cfd7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D23194940>]}
+[0m17:57:31.848686 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m17:57:31.857200 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m17:57:31.867720 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m17:57:31.868720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '39063d5a-c306-44c2-9e6b-6a6a38cfd7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D2333FA90>]}
+[0m17:57:33.083716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '39063d5a-c306-44c2-9e6b-6a6a38cfd7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D23477880>]}
+[0m17:57:33.092872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '39063d5a-c306-44c2-9e6b-6a6a38cfd7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D23686BC0>]}
+[0m17:57:33.093933 [info ] [MainThread]: Found 1 model, 0 sources, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m17:57:33.094822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39063d5a-c306-44c2-9e6b-6a6a38cfd7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D23686BC0>]}
+[0m17:57:33.095823 [info ] [MainThread]: 
+[0m17:57:33.097327 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:57:33.099449 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m17:57:33.099449 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:57:33.889407 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_turing-job-ad-project, now create_turing-job-ad-project_turing_dbt_sales_dev)
+[0m17:57:33.890402 [debug] [ThreadPool]: Creating schema "database: "turing-job-ad-project"
+schema: "turing_dbt_sales_dev"
+"
+[0m17:57:33.901916 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:57:33.903916 [debug] [ThreadPool]: On create_turing-job-ad-project_turing_dbt_sales_dev: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "connection_name": "create_turing-job-ad-project_turing_dbt_sales_dev"} */
+create schema if not exists `turing-job-ad-project`.`turing_dbt_sales_dev`
+  
+[0m17:57:35.111468 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:c5cb1fb5-7e99-4724-8159-2e4177f8d7ce&page=queryresults
+[0m17:57:35.982715 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m17:57:35.983715 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:57:36.720005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39063d5a-c306-44c2-9e6b-6a6a38cfd7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D2345DC00>]}
+[0m17:57:36.721004 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:57:36.721004 [info ] [MainThread]: 
+[0m17:57:36.725003 [debug] [Thread-1 (]: Began running node model.turing_sales.superstore_final_dataset
+[0m17:57:36.726002 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.superstore_final_dataset ...... [RUN]
+[0m17:57:36.727006 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.superstore_final_dataset'
+[0m17:57:36.727006 [debug] [Thread-1 (]: Began compiling node model.turing_sales.superstore_final_dataset
+[0m17:57:36.737575 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.superstore_final_dataset"
+[0m17:57:36.738583 [debug] [Thread-1 (]: Timing info for model.turing_sales.superstore_final_dataset (compile): 17:57:36.728062 => 17:57:36.738583
+[0m17:57:36.739589 [debug] [Thread-1 (]: Began executing node model.turing_sales.superstore_final_dataset
+[0m17:57:36.773145 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.superstore_final_dataset"
+[0m17:57:36.774146 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:57:36.775146 [debug] [Thread-1 (]: On model.turing_sales.superstore_final_dataset: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.superstore_final_dataset"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`superstore_final_dataset`
+  OPTIONS()
+  as select * from `turing-job-ad-project.turing_dbt_sales.superstore_final_dataset`;;
+
+
+[0m17:57:37.533405 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:34881ccb-7d06-416c-aa21-337ff113a7ff&page=queryresults
+[0m17:57:37.534408 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected ";" at [6:86]')
+[0m17:57:38.175813 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:36c0447c-a7d3-47ce-b07a-c858d3580ac0&page=queryresults
+[0m17:57:38.175813 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:36c0447c-a7d3-47ce-b07a-c858d3580ac0&page=queryresults
+[0m17:57:38.177319 [debug] [Thread-1 (]: Timing info for model.turing_sales.superstore_final_dataset (execute): 17:57:36.739589 => 17:57:38.177319
+[0m17:57:38.184831 [debug] [Thread-1 (]: Database Error in model superstore_final_dataset (models\marts\sales\superstore_final_dataset.sql)
+  Syntax error: Unexpected ";" at [6:86]
+  compiled Code at target\run\turing_sales\models\marts\sales\superstore_final_dataset.sql
+[0m17:57:38.184831 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '39063d5a-c306-44c2-9e6b-6a6a38cfd7a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D237244F0>]}
+[0m17:57:38.185837 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model turing_dbt_sales_dev.superstore_final_dataset  [[31mERROR[0m in 1.46s]
+[0m17:57:38.185837 [debug] [Thread-1 (]: Finished running node model.turing_sales.superstore_final_dataset
+[0m17:57:38.189353 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:57:38.189353 [debug] [MainThread]: Connection 'create_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m17:57:38.190351 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m17:57:38.190351 [debug] [MainThread]: Connection 'model.turing_sales.superstore_final_dataset' was properly closed.
+[0m17:57:38.190351 [info ] [MainThread]: 
+[0m17:57:38.191354 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.09 seconds (5.09s).
+[0m17:57:38.192351 [debug] [MainThread]: Command end result
+[0m17:57:38.202867 [info ] [MainThread]: 
+[0m17:57:38.203867 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:57:38.204865 [info ] [MainThread]: 
+[0m17:57:38.204865 [error] [MainThread]:   Database Error in model superstore_final_dataset (models\marts\sales\superstore_final_dataset.sql)
+  Syntax error: Unexpected ";" at [6:86]
+  compiled Code at target\run\turing_sales\models\marts\sales\superstore_final_dataset.sql
+[0m17:57:38.205867 [info ] [MainThread]: 
+[0m17:57:38.205867 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:57:38.208381 [debug] [MainThread]: Command `dbt run` failed at 17:57:38.208381 after 7.15 seconds
+[0m17:57:38.209383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D1F7FB760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D23724D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D23724E20>]}
+[0m17:57:38.210389 [debug] [MainThread]: Flushing usage events
+[0m17:58:10.185245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8760B820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8A4752D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8A475930>]}
+
+
+============================== 17:58:10.190247 | 6caa2bb2-a386-4c72-a851-5114d096f29d ==============================
+[0m17:58:10.190247 [info ] [MainThread]: Running with dbt=1.7.4
+[0m17:58:10.190247 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:58:10.832491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6caa2bb2-a386-4c72-a851-5114d096f29d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C87C5B700>]}
+[0m17:58:10.932500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6caa2bb2-a386-4c72-a851-5114d096f29d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8AFA7BB0>]}
+[0m17:58:10.934507 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m17:58:10.944020 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m17:58:11.036674 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:58:11.037674 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\marts\sales\superstore_final_dataset.sql
+[0m17:58:11.186235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6caa2bb2-a386-4c72-a851-5114d096f29d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8B4C80D0>]}
+[0m17:58:11.194752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6caa2bb2-a386-4c72-a851-5114d096f29d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8B3502E0>]}
+[0m17:58:11.195753 [info ] [MainThread]: Found 1 model, 0 sources, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m17:58:11.196749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6caa2bb2-a386-4c72-a851-5114d096f29d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8B350460>]}
+[0m17:58:11.197749 [info ] [MainThread]: 
+[0m17:58:11.199749 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:58:11.201748 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m17:58:11.202258 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:58:12.163343 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m17:58:12.163343 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:58:12.926484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6caa2bb2-a386-4c72-a851-5114d096f29d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8B350460>]}
+[0m17:58:12.927485 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:58:12.928486 [info ] [MainThread]: 
+[0m17:58:12.933004 [debug] [Thread-1 (]: Began running node model.turing_sales.superstore_final_dataset
+[0m17:58:12.933999 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.superstore_final_dataset ...... [RUN]
+[0m17:58:12.934999 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.superstore_final_dataset'
+[0m17:58:12.934999 [debug] [Thread-1 (]: Began compiling node model.turing_sales.superstore_final_dataset
+[0m17:58:12.943518 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.superstore_final_dataset"
+[0m17:58:12.945515 [debug] [Thread-1 (]: Timing info for model.turing_sales.superstore_final_dataset (compile): 17:58:12.936001 => 17:58:12.944516
+[0m17:58:12.945515 [debug] [Thread-1 (]: Began executing node model.turing_sales.superstore_final_dataset
+[0m17:58:12.983591 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.superstore_final_dataset"
+[0m17:58:12.984591 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:58:12.987592 [debug] [Thread-1 (]: On model.turing_sales.superstore_final_dataset: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.superstore_final_dataset"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`superstore_final_dataset`
+  OPTIONS()
+  as select * from `turing-job-ad-project.turing_dbt_sales.superstore_final_dataset`;
+
+
+[0m17:58:14.217950 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:8bafd736-a022-4b5a-8f47-9c95ae8ca3aa&page=queryresults
+[0m17:58:14.984434 [debug] [Thread-1 (]: Timing info for model.turing_sales.superstore_final_dataset (execute): 17:58:12.946517 => 17:58:14.984434
+[0m17:58:14.985435 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6caa2bb2-a386-4c72-a851-5114d096f29d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8B5725F0>]}
+[0m17:58:14.986435 [info ] [Thread-1 (]: 1 of 1 OK created sql view model turing_dbt_sales_dev.superstore_final_dataset . [[32mCREATE VIEW (0 processed)[0m in 2.05s]
+[0m17:58:14.987434 [debug] [Thread-1 (]: Finished running node model.turing_sales.superstore_final_dataset
+[0m17:58:14.989435 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:58:14.989435 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m17:58:14.989435 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m17:58:14.990437 [debug] [MainThread]: Connection 'model.turing_sales.superstore_final_dataset' was properly closed.
+[0m17:58:14.990437 [info ] [MainThread]: 
+[0m17:58:14.990437 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.79 seconds (3.79s).
+[0m17:58:14.991943 [debug] [MainThread]: Command end result
+[0m17:58:15.002458 [info ] [MainThread]: 
+[0m17:58:15.003467 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:58:15.003467 [info ] [MainThread]: 
+[0m17:58:15.004468 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:58:15.005467 [debug] [MainThread]: Command `dbt run` succeeded at 17:58:15.005467 after 4.88 seconds
+[0m17:58:15.006582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8760B820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8B14AA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C8B337C10>]}
+[0m17:58:15.006582 [debug] [MainThread]: Flushing usage events
+[0m11:33:34.198898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9600EB7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C962F56C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C962F56620>]}
+
+
+============================== 11:33:34.205057 | 4d3883d7-cda0-4480-9931-36698b14b93a ==============================
+[0m11:33:34.205057 [info ] [MainThread]: Running with dbt=1.7.4
+[0m11:33:34.206059 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select dim_customers', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:33:34.938922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4d3883d7-cda0-4480-9931-36698b14b93a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C962F03F40>]}
+[0m11:33:35.022441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4d3883d7-cda0-4480-9931-36698b14b93a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9624B0070>]}
+[0m11:33:35.024948 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m11:33:35.038948 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m11:33:35.679296 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 5 files added, 0 files changed.
+[0m11:33:35.679296 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\orders.sql
+[0m11:33:35.680296 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\dim_customers.sql
+[0m11:33:35.680296 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\products.sql
+[0m11:33:35.680296 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\staging\sales\sources.yml
+[0m11:33:35.681296 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\sales.sql
+[0m11:33:35.892564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4d3883d7-cda0-4480-9931-36698b14b93a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9640E6710>]}
+[0m11:33:35.907668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4d3883d7-cda0-4480-9931-36698b14b93a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C963E2BCD0>]}
+[0m11:33:35.908667 [info ] [MainThread]: Found 5 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m11:33:35.908667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d3883d7-cda0-4480-9931-36698b14b93a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C963E2BD60>]}
+[0m11:33:35.909666 [warn ] [MainThread]: The selection criterion 'dim_customers' does not match any nodes
+[0m11:33:35.910666 [info ] [MainThread]: 
+[0m11:33:35.910666 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:33:35.911666 [debug] [MainThread]: Command end result
+[0m11:33:35.920667 [debug] [MainThread]: Command `dbt run` succeeded at 11:33:35.919666 after 1.78 seconds
+[0m11:33:35.920667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9600EB7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9624B0070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C963E2BDF0>]}
+[0m11:33:35.920667 [debug] [MainThread]: Flushing usage events
+[0m11:34:05.004611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E57EB820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E86577C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E8654CA0>]}
+
+
+============================== 11:34:05.007611 | 349f067f-29c4-443e-9578-19eb99998f5f ==============================
+[0m11:34:05.007611 [info ] [MainThread]: Running with dbt=1.7.4
+[0m11:34:05.008610 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'debug': 'False', 'version_check': 'True', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select dim_customers', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:34:05.518039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '349f067f-29c4-443e-9578-19eb99998f5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E5E3B700>]}
+[0m11:34:05.602046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '349f067f-29c4-443e-9578-19eb99998f5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E9188910>]}
+[0m11:34:05.603047 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m11:34:05.611055 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m11:34:05.690564 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:34:05.691563 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\dim_customers.sql
+[0m11:34:05.820139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '349f067f-29c4-443e-9578-19eb99998f5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E96C5150>]}
+[0m11:34:05.829142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '349f067f-29c4-443e-9578-19eb99998f5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E9541D50>]}
+[0m11:34:05.830141 [info ] [MainThread]: Found 5 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m11:34:05.830141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '349f067f-29c4-443e-9578-19eb99998f5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E9541DB0>]}
+[0m11:34:05.831142 [info ] [MainThread]: 
+[0m11:34:05.832141 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:34:05.833750 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m11:34:05.834759 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:34:06.613682 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m11:34:06.613682 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:34:07.228899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '349f067f-29c4-443e-9578-19eb99998f5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E9540CD0>]}
+[0m11:34:07.229898 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:34:07.229898 [info ] [MainThread]: 
+[0m11:34:07.234898 [debug] [Thread-1 (]: Began running node model.turing_sales.dim_customers
+[0m11:34:07.234898 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.dim_customers ................. [RUN]
+[0m11:34:07.235897 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.dim_customers'
+[0m11:34:07.236899 [debug] [Thread-1 (]: Began compiling node model.turing_sales.dim_customers
+[0m11:34:07.243898 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.dim_customers"
+[0m11:34:07.244897 [debug] [Thread-1 (]: Timing info for model.turing_sales.dim_customers (compile): 11:34:07.236899 => 11:34:07.243898
+[0m11:34:07.244897 [debug] [Thread-1 (]: Began executing node model.turing_sales.dim_customers
+[0m11:34:07.277900 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.dim_customers"
+[0m11:34:07.278898 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:34:07.280900 [debug] [Thread-1 (]: On model.turing_sales.dim_customers: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_customers"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_customers`
+  OPTIONS()
+  as with customers as {
+
+select
+    Customer_ID,
+    Customer_Name
+from raw.superstore_final_dataset
+
+};
+
+
+[0m11:34:08.168476 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:1a16c2d6-1719-42f1-9070-1d2a92ce61e3&page=queryresults
+[0m11:34:08.168476 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected "(" but got "{" at [6:24]')
+[0m11:34:09.207476 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:ff91e665-bdef-493b-8f3a-292297eb939c&page=queryresults
+[0m11:34:09.208476 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:ff91e665-bdef-493b-8f3a-292297eb939c&page=queryresults
+[0m11:34:09.209476 [debug] [Thread-1 (]: Timing info for model.turing_sales.dim_customers (execute): 11:34:07.245902 => 11:34:09.209476
+[0m11:34:09.306997 [debug] [Thread-1 (]: Database Error in model dim_customers (models\dim_customers.sql)
+  Syntax error: Expected "(" but got "{" at [6:24]
+  compiled Code at target\run\turing_sales\models\dim_customers.sql
+[0m11:34:09.307998 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '349f067f-29c4-443e-9578-19eb99998f5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E96C55D0>]}
+[0m11:34:09.307998 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model turing_dbt_sales_dev.dim_customers ........ [[31mERROR[0m in 2.07s]
+[0m11:34:09.308997 [debug] [Thread-1 (]: Finished running node model.turing_sales.dim_customers
+[0m11:34:09.310996 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:34:09.310996 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m11:34:09.310996 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m11:34:09.311995 [debug] [MainThread]: Connection 'model.turing_sales.dim_customers' was properly closed.
+[0m11:34:09.311995 [info ] [MainThread]: 
+[0m11:34:09.312995 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.48 seconds (3.48s).
+[0m11:34:09.313996 [debug] [MainThread]: Command end result
+[0m11:34:09.322514 [info ] [MainThread]: 
+[0m11:34:09.322514 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m11:34:09.323513 [info ] [MainThread]: 
+[0m11:34:09.323513 [error] [MainThread]:   Database Error in model dim_customers (models\dim_customers.sql)
+  Syntax error: Expected "(" but got "{" at [6:24]
+  compiled Code at target\run\turing_sales\models\dim_customers.sql
+[0m11:34:09.324512 [info ] [MainThread]: 
+[0m11:34:09.325511 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m11:34:09.326510 [debug] [MainThread]: Command `dbt run` failed at 11:34:09.326510 after 4.37 seconds
+[0m11:34:09.326510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E57EB820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E9540DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E95419C0>]}
+[0m11:34:09.327510 [debug] [MainThread]: Flushing usage events
+[0m12:12:26.866660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D547B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D82E6CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D82E4520>]}
+
+
+============================== 12:12:26.870173 | ea734e8c-07eb-42da-9331-55febd1ba14d ==============================
+[0m12:12:26.870173 [info ] [MainThread]: Running with dbt=1.7.4
+[0m12:12:26.871170 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'debug': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select dim_customers', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:12:27.420159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ea734e8c-07eb-42da-9331-55febd1ba14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D5B78850>]}
+[0m12:12:27.511118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ea734e8c-07eb-42da-9331-55febd1ba14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D8E18910>]}
+[0m12:12:27.512117 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m12:12:27.520627 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m12:12:27.637925 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 4 files added, 0 files changed.
+[0m12:12:27.638934 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\staging\superstore\src_superstore.yml
+[0m12:12:27.638934 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\staging\superstore\stg_orders.sql
+[0m12:12:27.639933 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\marts\core\dim_customers.sql
+[0m12:12:27.639933 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\staging\superstore\stg_customers.sql
+[0m12:12:27.640942 [debug] [MainThread]: Partial parsing: deleted file: turing_sales://models\dim_customers.sql
+[0m12:12:27.640942 [debug] [MainThread]: Partial parsing: deleted file: turing_sales://models\marts\sales\superstore_final_dataset.sql
+[0m12:12:27.873994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ea734e8c-07eb-42da-9331-55febd1ba14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D9473EE0>]}
+[0m12:12:27.885023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ea734e8c-07eb-42da-9331-55febd1ba14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D91D1F90>]}
+[0m12:12:27.886026 [info ] [MainThread]: Found 6 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m12:12:27.887027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ea734e8c-07eb-42da-9331-55febd1ba14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D91D1F00>]}
+[0m12:12:27.888023 [info ] [MainThread]: 
+[0m12:12:27.888529 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:12:27.890540 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m12:12:27.890540 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:12:28.646323 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m12:12:28.646323 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:12:29.282097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ea734e8c-07eb-42da-9331-55febd1ba14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D91D0E20>]}
+[0m12:12:29.283094 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:12:29.283094 [info ] [MainThread]: 
+[0m12:12:29.286094 [debug] [Thread-1 (]: Began running node model.turing_sales.dim_customers
+[0m12:12:29.287094 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.dim_customers ................. [RUN]
+[0m12:12:29.288097 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.dim_customers'
+[0m12:12:29.288097 [debug] [Thread-1 (]: Began compiling node model.turing_sales.dim_customers
+[0m12:12:29.297987 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.dim_customers"
+[0m12:12:29.298999 [debug] [Thread-1 (]: Timing info for model.turing_sales.dim_customers (compile): 12:12:29.289469 => 12:12:29.298999
+[0m12:12:29.300001 [debug] [Thread-1 (]: Began executing node model.turing_sales.dim_customers
+[0m12:12:29.330048 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.dim_customers"
+[0m12:12:29.332049 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:12:29.334052 [debug] [Thread-1 (]: On model.turing_sales.dim_customers: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_customers"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_customers`
+  OPTIONS()
+  as with customers as (
+
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customers`
+
+);
+
+
+[0m12:12:30.030429 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:99e25e54-a827-45c1-8c7a-364b13b6068b&page=queryresults
+[0m12:12:30.030429 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected ";" at [10:2]')
+[0m12:12:30.914270 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:473fd328-2acb-428e-9bb3-07eae4f50dbe&page=queryresults
+[0m12:12:30.915284 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:473fd328-2acb-428e-9bb3-07eae4f50dbe&page=queryresults
+[0m12:12:30.916282 [debug] [Thread-1 (]: Timing info for model.turing_sales.dim_customers (execute): 12:12:29.300001 => 12:12:30.915284
+[0m12:12:30.919320 [debug] [Thread-1 (]: Database Error in model dim_customers (models\marts\core\dim_customers.sql)
+  Syntax error: Unexpected ";" at [10:2]
+  compiled Code at target\run\turing_sales\models\marts\core\dim_customers.sql
+[0m12:12:30.920321 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ea734e8c-07eb-42da-9331-55febd1ba14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D8FF3E50>]}
+[0m12:12:30.921321 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model turing_dbt_sales_dev.dim_customers ........ [[31mERROR[0m in 1.63s]
+[0m12:12:30.922322 [debug] [Thread-1 (]: Finished running node model.turing_sales.dim_customers
+[0m12:12:30.924318 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:12:30.924318 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m12:12:30.924318 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m12:12:30.925320 [debug] [MainThread]: Connection 'model.turing_sales.dim_customers' was properly closed.
+[0m12:12:30.925320 [info ] [MainThread]: 
+[0m12:12:30.926322 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.04 seconds (3.04s).
+[0m12:12:30.926322 [debug] [MainThread]: Command end result
+[0m12:12:30.936440 [info ] [MainThread]: 
+[0m12:12:30.936440 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m12:12:30.937946 [info ] [MainThread]: 
+[0m12:12:30.937946 [error] [MainThread]:   Database Error in model dim_customers (models\marts\core\dim_customers.sql)
+  Syntax error: Unexpected ";" at [10:2]
+  compiled Code at target\run\turing_sales\models\marts\core\dim_customers.sql
+[0m12:12:30.938952 [info ] [MainThread]: 
+[0m12:12:30.939956 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m12:12:30.940952 [debug] [MainThread]: Command `dbt run` failed at 12:12:30.940952 after 4.12 seconds
+[0m12:12:30.940952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D547B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D91D10F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2D91D0D30>]}
+[0m12:12:30.941957 [debug] [MainThread]: Flushing usage events
+[0m12:13:25.449987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C242B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C5296CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C5294520>]}
+
+
+============================== 12:13:25.452987 | a417bbad-f883-4b3d-a396-bcbfd89226a0 ==============================
+[0m12:13:25.452987 [info ] [MainThread]: Running with dbt=1.7.4
+[0m12:13:25.453988 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select stg_customers', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:13:25.998175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a417bbad-f883-4b3d-a396-bcbfd89226a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C2B28850>]}
+[0m12:13:26.088016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a417bbad-f883-4b3d-a396-bcbfd89226a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C5DC82B0>]}
+[0m12:13:26.089024 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m12:13:26.097603 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m12:13:26.178489 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:13:26.179496 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:13:26.184497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a417bbad-f883-4b3d-a396-bcbfd89226a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C61C04F0>]}
+[0m12:13:26.194046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a417bbad-f883-4b3d-a396-bcbfd89226a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C618E0E0>]}
+[0m12:13:26.194046 [info ] [MainThread]: Found 6 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m12:13:26.195047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a417bbad-f883-4b3d-a396-bcbfd89226a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C618E050>]}
+[0m12:13:26.196047 [info ] [MainThread]: 
+[0m12:13:26.197554 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:13:26.199099 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m12:13:26.199099 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:13:26.875988 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m12:13:26.875988 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:13:27.490352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a417bbad-f883-4b3d-a396-bcbfd89226a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C618CF70>]}
+[0m12:13:27.490352 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:13:27.491347 [info ] [MainThread]: 
+[0m12:13:27.494346 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_customers
+[0m12:13:27.495351 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_customers ................. [RUN]
+[0m12:13:27.496349 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customers'
+[0m12:13:27.496349 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_customers
+[0m12:13:27.504397 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_customers"
+[0m12:13:27.506397 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customers (compile): 12:13:27.496349 => 12:13:27.506397
+[0m12:13:27.506397 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_customers
+[0m12:13:27.543379 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_customers"
+[0m12:13:27.545379 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:13:27.547885 [debug] [Thread-1 (]: On model.turing_sales.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customers"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customers`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customers as (
+
+select
+    Customer_ID,
+    Customer_Name
+from source
+
+)
+
+select * from customers;
+
+
+[0m12:13:28.615985 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:01a17433-4e4c-4dd3-86ca-d7f4bf29654e&page=queryresults
+[0m12:13:29.222039 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customers (execute): 12:13:27.507904 => 12:13:29.222039
+[0m12:13:29.223039 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a417bbad-f883-4b3d-a396-bcbfd89226a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C5FA05B0>]}
+[0m12:13:29.224040 [info ] [Thread-1 (]: 1 of 1 OK created sql view model turing_dbt_sales_dev.stg_customers ............ [[32mCREATE VIEW (0 processed)[0m in 1.73s]
+[0m12:13:29.225041 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_customers
+[0m12:13:29.226043 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:13:29.226043 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m12:13:29.227548 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m12:13:29.228074 [debug] [MainThread]: Connection 'model.turing_sales.stg_customers' was properly closed.
+[0m12:13:29.228074 [info ] [MainThread]: 
+[0m12:13:29.229081 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.03 seconds (3.03s).
+[0m12:13:29.230080 [debug] [MainThread]: Command end result
+[0m12:13:29.246126 [info ] [MainThread]: 
+[0m12:13:29.247747 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:13:29.248256 [info ] [MainThread]: 
+[0m12:13:29.248256 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m12:13:29.250262 [debug] [MainThread]: Command `dbt run` succeeded at 12:13:29.249263 after 3.85 seconds
+[0m12:13:29.250262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C242B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C5F6FF70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4C5DD6F20>]}
+[0m12:13:29.251262 [debug] [MainThread]: Flushing usage events
+[0m12:18:16.673046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D0323B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D06055270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D060572E0>]}
+
+
+============================== 12:18:16.676554 | 18050a80-5f73-44e6-a188-910959dbe928 ==============================
+[0m12:18:16.676554 [info ] [MainThread]: Running with dbt=1.7.4
+[0m12:18:16.676554 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'debug': 'False', 'warn_error': 'None', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select stg_customers', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:18:17.238881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '18050a80-5f73-44e6-a188-910959dbe928', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D038D8850>]}
+[0m12:18:17.328407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '18050a80-5f73-44e6-a188-910959dbe928', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D06B89240>]}
+[0m12:18:17.329924 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m12:18:17.339491 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m12:18:17.419840 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m12:18:17.420836 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\staging\superstore\stg_customers.yaml
+[0m12:18:17.441949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '18050a80-5f73-44e6-a188-910959dbe928', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D06FE2980>]}
+[0m12:18:17.452845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '18050a80-5f73-44e6-a188-910959dbe928', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D06F9A800>]}
+[0m12:18:17.452845 [info ] [MainThread]: Found 6 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m12:18:17.453706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '18050a80-5f73-44e6-a188-910959dbe928', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D06F9B7C0>]}
+[0m12:18:17.454720 [info ] [MainThread]: 
+[0m12:18:17.454720 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:18:17.457234 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m12:18:17.458237 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:18:18.279227 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m12:18:18.280224 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:18:18.929092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '18050a80-5f73-44e6-a188-910959dbe928', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D06F9BEB0>]}
+[0m12:18:18.930095 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:18:18.931094 [info ] [MainThread]: 
+[0m12:18:18.934093 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_customers
+[0m12:18:18.934093 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_customers ................. [RUN]
+[0m12:18:18.935090 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customers'
+[0m12:18:18.936091 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_customers
+[0m12:18:18.943683 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_customers"
+[0m12:18:18.944683 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customers (compile): 12:18:18.936091 => 12:18:18.944683
+[0m12:18:18.946191 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_customers
+[0m12:18:18.980156 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_customers"
+[0m12:18:18.981157 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:18:18.982156 [debug] [Thread-1 (]: On model.turing_sales.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customers"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customers`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customers as (
+
+select
+    Customer_ID,
+    Customer_Name
+from source
+
+)
+
+select * from customers;
+
+
+[0m12:18:19.920042 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:13a67e92-4cbd-4a27-81d9-efededeb088c&page=queryresults
+[0m12:18:20.714675 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customers (execute): 12:18:18.946191 => 12:18:20.714675
+[0m12:18:20.716185 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '18050a80-5f73-44e6-a188-910959dbe928', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D06F8CDC0>]}
+[0m12:18:20.717197 [info ] [Thread-1 (]: 1 of 1 OK created sql view model turing_dbt_sales_dev.stg_customers ............ [[32mCREATE VIEW (0 processed)[0m in 1.78s]
+[0m12:18:20.717197 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_customers
+[0m12:18:20.719458 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:18:20.719458 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m12:18:20.720456 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m12:18:20.720456 [debug] [MainThread]: Connection 'model.turing_sales.stg_customers' was properly closed.
+[0m12:18:20.721457 [info ] [MainThread]: 
+[0m12:18:20.721457 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.27 seconds (3.27s).
+[0m12:18:20.722456 [debug] [MainThread]: Command end result
+[0m12:18:20.740115 [info ] [MainThread]: 
+[0m12:18:20.741115 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:18:20.741115 [info ] [MainThread]: 
+[0m12:18:20.742119 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m12:18:20.744120 [debug] [MainThread]: Command `dbt run` succeeded at 12:18:20.743115 after 4.12 seconds
+[0m12:18:20.744120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D0323B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D06CA27A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D06FDFB20>]}
+[0m12:18:20.745120 [debug] [MainThread]: Flushing usage events
+[0m12:27:34.118169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727854B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727B3B6C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727B3B6620>]}
+
+
+============================== 12:27:34.122176 | a3fa5ce6-3781-456c-9348-81037967b596 ==============================
+[0m12:27:34.122176 [info ] [MainThread]: Running with dbt=1.7.4
+[0m12:27:34.122176 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'debug': 'False', 'warn_error': 'None', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select stg_customers', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:27:34.646318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a3fa5ce6-3781-456c-9348-81037967b596', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017278B9AFE0>]}
+[0m12:27:34.732624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a3fa5ce6-3781-456c-9348-81037967b596', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727BEE95D0>]}
+[0m12:27:34.733623 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m12:27:34.741216 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m12:27:34.830991 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:27:34.832001 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_customers.sql
+[0m12:27:34.964949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a3fa5ce6-3781-456c-9348-81037967b596', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727C4253F0>]}
+[0m12:27:34.974974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a3fa5ce6-3781-456c-9348-81037967b596', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727C2AE080>]}
+[0m12:27:34.975978 [info ] [MainThread]: Found 6 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m12:27:34.975978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a3fa5ce6-3781-456c-9348-81037967b596', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727C2ADFF0>]}
+[0m12:27:34.977972 [info ] [MainThread]: 
+[0m12:27:34.977972 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:27:34.980292 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m12:27:34.980292 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:27:35.712278 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m12:27:35.712278 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:27:36.300029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a3fa5ce6-3781-456c-9348-81037967b596', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727C2ACF10>]}
+[0m12:27:36.301027 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:27:36.302028 [info ] [MainThread]: 
+[0m12:27:36.304539 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_customers
+[0m12:27:36.305539 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_customers ................. [RUN]
+[0m12:27:36.306540 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customers'
+[0m12:27:36.306540 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_customers
+[0m12:27:36.314576 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_customers"
+[0m12:27:36.315578 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customers (compile): 12:27:36.306540 => 12:27:36.315578
+[0m12:27:36.316574 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_customers
+[0m12:27:36.350284 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_customers"
+[0m12:27:36.351284 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:27:36.352281 [debug] [Thread-1 (]: On model.turing_sales.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customers"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customers`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customers as (
+
+select distinct
+    Customer_ID,
+    Customer_Name
+from source
+
+)
+
+select * from customers;
+
+
+[0m12:27:37.477252 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:a3f46f69-58f0-465f-b3ab-30ec8206ad36&page=queryresults
+[0m12:27:38.304608 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customers (execute): 12:27:36.316574 => 12:27:38.303597
+[0m12:27:38.304608 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a3fa5ce6-3781-456c-9348-81037967b596', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727C4257E0>]}
+[0m12:27:38.305609 [info ] [Thread-1 (]: 1 of 1 OK created sql view model turing_dbt_sales_dev.stg_customers ............ [[32mCREATE VIEW (0 processed)[0m in 2.00s]
+[0m12:27:38.306604 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_customers
+[0m12:27:38.308111 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:27:38.309120 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m12:27:38.309120 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m12:27:38.309120 [debug] [MainThread]: Connection 'model.turing_sales.stg_customers' was properly closed.
+[0m12:27:38.310118 [info ] [MainThread]: 
+[0m12:27:38.310118 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.33 seconds (3.33s).
+[0m12:27:38.311117 [debug] [MainThread]: Command end result
+[0m12:27:38.320161 [info ] [MainThread]: 
+[0m12:27:38.321159 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:27:38.321159 [info ] [MainThread]: 
+[0m12:27:38.322160 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m12:27:38.323668 [debug] [MainThread]: Command `dbt run` succeeded at 12:27:38.323668 after 4.25 seconds
+[0m12:27:38.323668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727854B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727C050430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001727C08E410>]}
+[0m12:27:38.324678 [debug] [MainThread]: Flushing usage events
+[0m12:39:21.830610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B0603B880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B08EB6BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B08EB41F0>]}
+
+
+============================== 12:39:21.834621 | 2450e706-fe9a-42cb-8314-4e546ab723b8 ==============================
+[0m12:39:21.834621 [info ] [MainThread]: Running with dbt=1.7.4
+[0m12:39:21.835617 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select stg_customer_addresses', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:39:22.383515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2450e706-fe9a-42cb-8314-4e546ab723b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B08E63F40>]}
+[0m12:39:22.472822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2450e706-fe9a-42cb-8314-4e546ab723b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B08E632E0>]}
+[0m12:39:22.474822 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m12:39:22.482872 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m12:39:22.570352 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 1 files changed.
+[0m12:39:22.571362 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\staging\superstore\stg_customer_addresses.sql
+[0m12:39:22.572363 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_customers.sql
+[0m12:39:22.712341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2450e706-fe9a-42cb-8314-4e546ab723b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B09F35CF0>]}
+[0m12:39:22.720591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2450e706-fe9a-42cb-8314-4e546ab723b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B09DAA6B0>]}
+[0m12:39:22.721936 [info ] [MainThread]: Found 7 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m12:39:22.721936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2450e706-fe9a-42cb-8314-4e546ab723b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B09DAA620>]}
+[0m12:39:22.723933 [info ] [MainThread]: 
+[0m12:39:22.723933 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:39:22.725934 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m12:39:22.725934 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:39:23.476699 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m12:39:23.478210 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:39:24.162499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2450e706-fe9a-42cb-8314-4e546ab723b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B09DA9540>]}
+[0m12:39:24.163500 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:39:24.164500 [info ] [MainThread]: 
+[0m12:39:24.166499 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_customer_addresses
+[0m12:39:24.168005 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_customer_addresses ........ [RUN]
+[0m12:39:24.169012 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customer_addresses'
+[0m12:39:24.169012 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_customer_addresses
+[0m12:39:24.176526 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_customer_addresses"
+[0m12:39:24.179044 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (compile): 12:39:24.169012 => 12:39:24.179044
+[0m12:39:24.179044 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_customer_addresses
+[0m12:39:24.211644 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_customer_addresses"
+[0m12:39:24.212645 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:39:24.214649 [debug] [Thread-1 (]: On model.turing_sales.stg_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customer_addresses"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customer_addresses as (
+
+select distinct
+    row_number() over (order by Country, City, State, Postal_Code, Region) as address_id,
+    Country,
+    City,
+    State,
+    Postal_Code,
+    Region
+from source
+
+)
+
+select * from customer_addresses;
+
+
+[0m12:39:25.104418 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:2981c77c-63c3-4df3-984d-20f72fe883dd&page=queryresults
+[0m12:39:25.718167 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (execute): 12:39:24.180550 => 12:39:25.718167
+[0m12:39:25.719179 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2450e706-fe9a-42cb-8314-4e546ab723b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B09F36140>]}
+[0m12:39:25.720178 [info ] [Thread-1 (]: 1 of 1 OK created sql view model turing_dbt_sales_dev.stg_customer_addresses ... [[32mCREATE VIEW (0 processed)[0m in 1.55s]
+[0m12:39:25.720178 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_customer_addresses
+[0m12:39:25.722460 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:39:25.722460 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m12:39:25.723459 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m12:39:25.723459 [debug] [MainThread]: Connection 'model.turing_sales.stg_customer_addresses' was properly closed.
+[0m12:39:25.723459 [info ] [MainThread]: 
+[0m12:39:25.724459 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.00 seconds (3.00s).
+[0m12:39:25.725462 [debug] [MainThread]: Command end result
+[0m12:39:25.735001 [info ] [MainThread]: 
+[0m12:39:25.736001 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:39:25.737001 [info ] [MainThread]: 
+[0m12:39:25.737001 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m12:39:25.739105 [debug] [MainThread]: Command `dbt run` succeeded at 12:39:25.738001 after 3.96 seconds
+[0m12:39:25.739105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B0603B880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B09B8EB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B09DA9F00>]}
+[0m12:39:25.739105 [debug] [MainThread]: Flushing usage events
+[0m12:41:11.225101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E649BB880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E67825420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E67827640>]}
+
+
+============================== 12:41:11.228605 | 00abbbd9-4318-4e04-b766-c21de3ba2540 ==============================
+[0m12:41:11.228605 [info ] [MainThread]: Running with dbt=1.7.4
+[0m12:41:11.228605 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --select stg_customer_addresses', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:41:11.776110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '00abbbd9-4318-4e04-b766-c21de3ba2540', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E677D3F40>]}
+[0m12:41:11.872873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '00abbbd9-4318-4e04-b766-c21de3ba2540', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E6835B5B0>]}
+[0m12:41:11.873871 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m12:41:11.881924 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m12:41:11.966077 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:41:11.966077 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_customer_addresses.sql
+[0m12:41:12.100668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '00abbbd9-4318-4e04-b766-c21de3ba2540', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E68899930>]}
+[0m12:41:12.110142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '00abbbd9-4318-4e04-b766-c21de3ba2540', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E6871A560>]}
+[0m12:41:12.111155 [info ] [MainThread]: Found 7 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m12:41:12.111155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00abbbd9-4318-4e04-b766-c21de3ba2540', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E6871A4D0>]}
+[0m12:41:12.112150 [info ] [MainThread]: 
+[0m12:41:12.113148 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:41:12.115150 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m12:41:12.115150 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:41:12.822905 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m12:41:12.822905 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:41:13.433716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00abbbd9-4318-4e04-b766-c21de3ba2540', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E683FDA20>]}
+[0m12:41:13.434715 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:41:13.435713 [info ] [MainThread]: 
+[0m12:41:13.438219 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_customer_addresses
+[0m12:41:13.438219 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_customer_addresses ........ [RUN]
+[0m12:41:13.439750 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customer_addresses'
+[0m12:41:13.440760 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_customer_addresses
+[0m12:41:13.448327 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_customer_addresses"
+[0m12:41:13.448327 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (compile): 12:41:13.440760 => 12:41:13.448327
+[0m12:41:13.449831 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_customer_addresses
+[0m12:41:13.480045 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_customer_addresses"
+[0m12:41:13.480971 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:41:13.482974 [debug] [Thread-1 (]: On model.turing_sales.stg_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customer_addresses"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customer_addresses as (
+
+select
+    dense_rank() over (order by Country, City, State, Postal_Code, Region) as address_id,
+    Country,
+    City,
+    State,
+    Postal_Code,
+    Region
+from source
+
+)
+
+select * from customer_addresses;
+
+
+[0m12:41:14.408314 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:52fdd887-ec91-498c-a3e7-5f9ca969b7b8&page=queryresults
+[0m12:41:14.942956 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (execute): 12:41:13.449831 => 12:41:14.942956
+[0m12:41:14.943954 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '00abbbd9-4318-4e04-b766-c21de3ba2540', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E68899F30>]}
+[0m12:41:14.944955 [info ] [Thread-1 (]: 1 of 1 OK created sql view model turing_dbt_sales_dev.stg_customer_addresses ... [[32mCREATE VIEW (0 processed)[0m in 1.50s]
+[0m12:41:14.944955 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_customer_addresses
+[0m12:41:14.946957 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:41:14.946957 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m12:41:14.946957 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m12:41:14.948465 [debug] [MainThread]: Connection 'model.turing_sales.stg_customer_addresses' was properly closed.
+[0m12:41:14.948465 [info ] [MainThread]: 
+[0m12:41:14.948465 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.84 seconds (2.84s).
+[0m12:41:14.950003 [debug] [MainThread]: Command end result
+[0m12:41:14.958517 [info ] [MainThread]: 
+[0m12:41:14.958517 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:41:14.960055 [info ] [MainThread]: 
+[0m12:41:14.960055 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m12:41:14.962064 [debug] [MainThread]: Command `dbt run` succeeded at 12:41:14.961062 after 3.79 seconds
+[0m12:41:14.962064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E649BB880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E684FF9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E684FD690>]}
+[0m12:41:14.962064 [debug] [MainThread]: Flushing usage events
+[0m12:42:37.496653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018912DDB760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018915C452D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018915C45930>]}
+
+
+============================== 12:42:37.500695 | a0350eb1-23b7-4371-a48f-9bf65305cbb2 ==============================
+[0m12:42:37.500695 [info ] [MainThread]: Running with dbt=1.7.4
+[0m12:42:37.501693 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --select stg_customer_addresses', 'send_anonymous_usage_stats': 'True'}
+[0m12:42:38.039607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a0350eb1-23b7-4371-a48f-9bf65305cbb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000189134D8850>]}
+[0m12:42:38.127362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a0350eb1-23b7-4371-a48f-9bf65305cbb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916779240>]}
+[0m12:42:38.128868 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m12:42:38.136386 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m12:42:38.220375 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:42:38.221380 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_customer_addresses.sql
+[0m12:42:38.354271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a0350eb1-23b7-4371-a48f-9bf65305cbb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916CC9840>]}
+[0m12:42:38.362797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a0350eb1-23b7-4371-a48f-9bf65305cbb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916B3E4D0>]}
+[0m12:42:38.363798 [info ] [MainThread]: Found 7 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m12:42:38.364799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a0350eb1-23b7-4371-a48f-9bf65305cbb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916B3E440>]}
+[0m12:42:38.365797 [info ] [MainThread]: 
+[0m12:42:38.365797 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:42:38.366799 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m12:42:38.368304 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:42:39.103588 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m12:42:39.104125 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:42:39.739415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a0350eb1-23b7-4371-a48f-9bf65305cbb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916785660>]}
+[0m12:42:39.740425 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:42:39.740425 [info ] [MainThread]: 
+[0m12:42:39.743423 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_customer_addresses
+[0m12:42:39.744423 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_customer_addresses ........ [RUN]
+[0m12:42:39.745423 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customer_addresses'
+[0m12:42:39.746425 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_customer_addresses
+[0m12:42:39.755990 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_customer_addresses"
+[0m12:42:39.756990 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (compile): 12:42:39.746425 => 12:42:39.755990
+[0m12:42:39.756990 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_customer_addresses
+[0m12:42:39.789702 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_customer_addresses"
+[0m12:42:39.789702 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:42:39.791709 [debug] [Thread-1 (]: On model.turing_sales.stg_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customer_addresses"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customer_addresses as (
+
+select distinct
+    Country,
+    City,
+    State,
+    Postal_Code,
+    Region
+from source
+
+)
+
+select * from customer_addresses;
+
+
+[0m12:42:40.804689 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:843ceb23-a301-4562-acf7-c44df7b47ad3&page=queryresults
+[0m12:42:41.364325 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (execute): 12:42:39.756990 => 12:42:41.364325
+[0m12:42:41.365327 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0350eb1-23b7-4371-a48f-9bf65305cbb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916CC9F60>]}
+[0m12:42:41.366326 [info ] [Thread-1 (]: 1 of 1 OK created sql view model turing_dbt_sales_dev.stg_customer_addresses ... [[32mCREATE VIEW (0 processed)[0m in 1.62s]
+[0m12:42:41.366326 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_customer_addresses
+[0m12:42:41.368325 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:42:41.368832 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m12:42:41.369336 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m12:42:41.369336 [debug] [MainThread]: Connection 'model.turing_sales.stg_customer_addresses' was properly closed.
+[0m12:42:41.369336 [info ] [MainThread]: 
+[0m12:42:41.370342 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.00 seconds (3.00s).
+[0m12:42:41.371343 [debug] [MainThread]: Command end result
+[0m12:42:41.380366 [info ] [MainThread]: 
+[0m12:42:41.380366 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:42:41.381369 [info ] [MainThread]: 
+[0m12:42:41.381369 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m12:42:41.383366 [debug] [MainThread]: Command `dbt run` succeeded at 12:42:41.382368 after 3.93 seconds
+[0m12:42:41.384369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018912DDB760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916B3C100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018916B3DED0>]}
+[0m12:42:41.384369 [debug] [MainThread]: Flushing usage events
+[0m12:45:31.580495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A61B6B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A649D52D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A649D5930>]}
+
+
+============================== 12:45:31.585495 | 2170cb91-7b5e-48ed-94a3-f0b0a708af93 ==============================
+[0m12:45:31.585495 [info ] [MainThread]: Running with dbt=1.7.4
+[0m12:45:31.585495 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --select stg_customer_addresses', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:45:32.135663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2170cb91-7b5e-48ed-94a3-f0b0a708af93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A64983F40>]}
+[0m12:45:32.223625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2170cb91-7b5e-48ed-94a3-f0b0a708af93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A6550B5B0>]}
+[0m12:45:32.225630 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m12:45:32.233818 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m12:45:32.317738 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:45:32.317738 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_customer_addresses.sql
+[0m12:45:32.453461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2170cb91-7b5e-48ed-94a3-f0b0a708af93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A65A4D930>]}
+[0m12:45:32.462509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2170cb91-7b5e-48ed-94a3-f0b0a708af93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A658CA560>]}
+[0m12:45:32.463510 [info ] [MainThread]: Found 7 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m12:45:32.464507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2170cb91-7b5e-48ed-94a3-f0b0a708af93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A658CA4D0>]}
+[0m12:45:32.465508 [info ] [MainThread]: 
+[0m12:45:32.466508 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:45:32.468020 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m12:45:32.468527 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:45:33.181659 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m12:45:33.182659 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:45:33.802469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2170cb91-7b5e-48ed-94a3-f0b0a708af93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A655ADBD0>]}
+[0m12:45:33.802469 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:45:33.803469 [info ] [MainThread]: 
+[0m12:45:33.806470 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_customer_addresses
+[0m12:45:33.806470 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_customer_addresses ........ [RUN]
+[0m12:45:33.808592 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customer_addresses'
+[0m12:45:33.809599 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_customer_addresses
+[0m12:45:33.817598 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_customer_addresses"
+[0m12:45:33.818677 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (compile): 12:45:33.809599 => 12:45:33.818677
+[0m12:45:33.819686 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_customer_addresses
+[0m12:45:33.849331 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_customer_addresses"
+[0m12:45:33.850341 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:45:33.851338 [debug] [Thread-1 (]: On model.turing_sales.stg_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customer_addresses"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customer_addresses as (
+    select
+        row_number() over () as address_id,
+        Country,
+        City,
+        State,
+        Postal_Code,
+        Region
+    from (
+        select distinct
+            Country,
+            City,
+            State,
+            Postal_Code,
+            Region
+        from source
+    ) distinct_addresses
+)
+
+select * from customer_addresses;
+
+
+[0m12:45:34.622187 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:91cc6371-7767-4fe5-9c89-dc1b7c88697e&page=queryresults
+[0m12:45:35.275656 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (execute): 12:45:33.819686 => 12:45:35.275656
+[0m12:45:35.276657 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2170cb91-7b5e-48ed-94a3-f0b0a708af93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A65A4DE70>]}
+[0m12:45:35.277653 [info ] [Thread-1 (]: 1 of 1 OK created sql view model turing_dbt_sales_dev.stg_customer_addresses ... [[32mCREATE VIEW (0 processed)[0m in 1.47s]
+[0m12:45:35.278664 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_customer_addresses
+[0m12:45:35.279674 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:45:35.280671 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m12:45:35.280671 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m12:45:35.280671 [debug] [MainThread]: Connection 'model.turing_sales.stg_customer_addresses' was properly closed.
+[0m12:45:35.281670 [info ] [MainThread]: 
+[0m12:45:35.282670 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.82 seconds (2.82s).
+[0m12:45:35.283675 [debug] [MainThread]: Command end result
+[0m12:45:35.291842 [info ] [MainThread]: 
+[0m12:45:35.292838 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:45:35.293837 [info ] [MainThread]: 
+[0m12:45:35.293837 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m12:45:35.295837 [debug] [MainThread]: Command `dbt run` succeeded at 12:45:35.295837 after 3.76 seconds
+[0m12:45:35.295837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A61B6B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A658CA080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A658CA0B0>]}
+[0m12:45:35.296838 [debug] [MainThread]: Flushing usage events
+[0m12:46:32.559493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021225B8B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212289F77C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212289F4CA0>]}
+
+
+============================== 12:46:32.563493 | 4872f901-8123-4448-ad2c-8a452fc9c734 ==============================
+[0m12:46:32.563493 [info ] [MainThread]: Running with dbt=1.7.4
+[0m12:46:32.564495 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --select stg_customer_addresses', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:46:33.111361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4872f901-8123-4448-ad2c-8a452fc9c734', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212261DAFE0>]}
+[0m12:46:33.198734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4872f901-8123-4448-ad2c-8a452fc9c734', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021228A27670>]}
+[0m12:46:33.199742 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m12:46:33.208252 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m12:46:33.294128 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:46:33.294128 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_customer_addresses.sql
+[0m12:46:33.428016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4872f901-8123-4448-ad2c-8a452fc9c734', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021229A61540>]}
+[0m12:46:33.436546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4872f901-8123-4448-ad2c-8a452fc9c734', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212298EE1D0>]}
+[0m12:46:33.436546 [info ] [MainThread]: Found 7 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m12:46:33.438052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4872f901-8123-4448-ad2c-8a452fc9c734', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212298EE140>]}
+[0m12:46:33.438579 [info ] [MainThread]: 
+[0m12:46:33.439588 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:46:33.441585 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m12:46:33.441585 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:46:34.160475 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m12:46:34.161474 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:46:34.806628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4872f901-8123-4448-ad2c-8a452fc9c734', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212298ED060>]}
+[0m12:46:34.806628 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:46:34.808132 [info ] [MainThread]: 
+[0m12:46:34.811141 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_customer_addresses
+[0m12:46:34.811141 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_customer_addresses ........ [RUN]
+[0m12:46:34.813143 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customer_addresses'
+[0m12:46:34.813143 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_customer_addresses
+[0m12:46:34.823484 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_customer_addresses"
+[0m12:46:34.825488 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (compile): 12:46:34.814141 => 12:46:34.824481
+[0m12:46:34.825488 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_customer_addresses
+[0m12:46:34.858653 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_customer_addresses"
+[0m12:46:34.859660 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:46:34.861660 [debug] [Thread-1 (]: On model.turing_sales.stg_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customer_addresses"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customer_addresses as (
+    select
+        row_number() over () as address_id,
+        Customer_ID,
+        Country,
+        City,
+        State,
+        Postal_Code,
+        Region
+    from (
+        select distinct
+            Customer_ID,
+            Country,
+            City,
+            State,
+            Postal_Code,
+            Region
+        from source
+    ) distinct_addresses
+)
+
+select * from customer_addresses;
+
+
+[0m12:46:35.823268 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:639c8e1c-8989-4aac-a72a-95ad519a4a37&page=queryresults
+[0m12:46:36.409664 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (execute): 12:46:34.826486 => 12:46:36.409664
+[0m12:46:36.410668 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4872f901-8123-4448-ad2c-8a452fc9c734', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021229A61C00>]}
+[0m12:46:36.411668 [info ] [Thread-1 (]: 1 of 1 OK created sql view model turing_dbt_sales_dev.stg_customer_addresses ... [[32mCREATE VIEW (0 processed)[0m in 1.60s]
+[0m12:46:36.412665 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_customer_addresses
+[0m12:46:36.414664 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:46:36.415664 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m12:46:36.415664 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m12:46:36.415664 [debug] [MainThread]: Connection 'model.turing_sales.stg_customer_addresses' was properly closed.
+[0m12:46:36.416662 [info ] [MainThread]: 
+[0m12:46:36.416662 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.98 seconds (2.98s).
+[0m12:46:36.416662 [debug] [MainThread]: Command end result
+[0m12:46:36.426175 [info ] [MainThread]: 
+[0m12:46:36.426175 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:46:36.427176 [info ] [MainThread]: 
+[0m12:46:36.428176 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m12:46:36.429233 [debug] [MainThread]: Command `dbt run` succeeded at 12:46:36.429233 after 3.92 seconds
+[0m12:46:36.429233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021225B8B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212297001C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212298ED5A0>]}
+[0m12:46:36.430236 [debug] [MainThread]: Flushing usage events
+[0m13:21:24.524305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F6B2B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F9995270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F99972E0>]}
+
+
+============================== 13:21:24.528377 | e7d3e2f4-6d3d-4729-ae9a-85333e364070 ==============================
+[0m13:21:24.528377 [info ] [MainThread]: Running with dbt=1.7.4
+[0m13:21:24.528377 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:21:25.066787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F7172FE0>]}
+[0m13:21:25.153625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F99CB640>]}
+[0m13:21:25.154624 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m13:21:25.163668 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m13:21:25.254710 [debug] [MainThread]: Partial parsing enabled: 4 files deleted, 2 files added, 1 files changed.
+[0m13:21:25.254710 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\marts\core\fct_customer_orders.sql
+[0m13:21:25.255707 [debug] [MainThread]: Partial parsing: added file: turing_sales://models\staging\superstore\stg_products.sql
+[0m13:21:25.255707 [debug] [MainThread]: Partial parsing: deleted file: turing_sales://models\sales.sql
+[0m13:21:25.256710 [debug] [MainThread]: Partial parsing: deleted file: turing_sales://models\products.sql
+[0m13:21:25.256710 [debug] [MainThread]: Partial parsing: deleted file: turing_sales://models\orders.sql
+[0m13:21:25.256710 [debug] [MainThread]: Partial parsing: deleted file: turing_sales://models\marts\core\dim_customers.sql
+[0m13:21:25.257710 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_orders.sql
+[0m13:21:25.395788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FA9FCC10>]}
+[0m13:21:25.404300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FA8861A0>]}
+[0m13:21:25.404300 [info ] [MainThread]: Found 5 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m13:21:25.405300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FA885ED0>]}
+[0m13:21:25.406305 [info ] [MainThread]: 
+[0m13:21:25.407810 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:21:25.409341 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m13:21:25.409341 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:21:26.163469 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m13:21:26.164469 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:21:26.793589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FA8848E0>]}
+[0m13:21:26.794589 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:21:26.794589 [info ] [MainThread]: 
+[0m13:21:26.798630 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_customer_addresses
+[0m13:21:26.798630 [debug] [Thread-2 (]: Began running node model.turing_sales.stg_customers
+[0m13:21:26.799643 [debug] [Thread-3 (]: Began running node model.turing_sales.stg_orders
+[0m13:21:26.800641 [debug] [Thread-4 (]: Began running node model.turing_sales.stg_products
+[0m13:21:26.799643 [info ] [Thread-1 (]: 1 of 5 START sql view model turing_dbt_sales_dev.stg_customer_addresses ........ [RUN]
+[0m13:21:26.800641 [info ] [Thread-2 (]: 2 of 5 START sql view model turing_dbt_sales_dev.stg_customers ................. [RUN]
+[0m13:21:26.803638 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customer_addresses'
+[0m13:21:26.801643 [info ] [Thread-3 (]: 3 of 5 START sql view model turing_dbt_sales_dev.stg_orders .................... [RUN]
+[0m13:21:26.803638 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customers'
+[0m13:21:26.804641 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_customer_addresses
+[0m13:21:26.802638 [info ] [Thread-4 (]: 4 of 5 START sql view model turing_dbt_sales_dev.stg_products .................. [RUN]
+[0m13:21:26.805637 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.turing_sales.stg_orders'
+[0m13:21:26.806642 [debug] [Thread-2 (]: Began compiling node model.turing_sales.stg_customers
+[0m13:21:26.814753 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_customer_addresses"
+[0m13:21:26.815750 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.turing_sales.stg_products'
+[0m13:21:26.816751 [debug] [Thread-3 (]: Began compiling node model.turing_sales.stg_orders
+[0m13:21:26.820780 [debug] [Thread-2 (]: Writing injected SQL for node "model.turing_sales.stg_customers"
+[0m13:21:26.820780 [debug] [Thread-4 (]: Began compiling node model.turing_sales.stg_products
+[0m13:21:26.824781 [debug] [Thread-3 (]: Writing injected SQL for node "model.turing_sales.stg_orders"
+[0m13:21:26.827777 [debug] [Thread-4 (]: Writing injected SQL for node "model.turing_sales.stg_products"
+[0m13:21:26.828284 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (compile): 13:21:26.806642 => 13:21:26.828284
+[0m13:21:26.829292 [debug] [Thread-2 (]: Timing info for model.turing_sales.stg_customers (compile): 13:21:26.816751 => 13:21:26.828284
+[0m13:21:26.829292 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_customer_addresses
+[0m13:21:26.830293 [debug] [Thread-2 (]: Began executing node model.turing_sales.stg_customers
+[0m13:21:26.853451 [debug] [Thread-3 (]: Timing info for model.turing_sales.stg_orders (compile): 13:21:26.821779 => 13:21:26.853451
+[0m13:21:26.864526 [debug] [Thread-2 (]: Writing runtime sql for node "model.turing_sales.stg_customers"
+[0m13:21:26.866528 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_customer_addresses"
+[0m13:21:26.866528 [debug] [Thread-3 (]: Began executing node model.turing_sales.stg_orders
+[0m13:21:26.868034 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_products (compile): 13:21:26.824781 => 13:21:26.866528
+[0m13:21:26.873571 [debug] [Thread-3 (]: Writing runtime sql for node "model.turing_sales.stg_orders"
+[0m13:21:26.873571 [debug] [Thread-4 (]: Began executing node model.turing_sales.stg_products
+[0m13:21:26.876573 [debug] [Thread-4 (]: Writing runtime sql for node "model.turing_sales.stg_products"
+[0m13:21:26.876573 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:21:26.878080 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:21:26.879627 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:21:26.882627 [debug] [Thread-2 (]: On model.turing_sales.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customers"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customers`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customers as (
+
+select distinct
+    Customer_ID,
+    Customer_Name,
+    Segment
+from source
+
+)
+
+select * from customers;
+
+
+[0m13:21:26.882627 [debug] [Thread-1 (]: On model.turing_sales.stg_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customer_addresses"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customer_addresses as (
+    select
+        row_number() over () as address_id,
+        Customer_ID,
+        Country,
+        City,
+        State,
+        Postal_Code,
+        Region
+    from (
+        select distinct
+            Customer_ID,
+            Country,
+            City,
+            State,
+            Postal_Code,
+            Region
+        from source
+    ) distinct_addresses
+)
+
+select * from customer_addresses;
+
+
+[0m13:21:26.907686 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:21:26.908701 [debug] [Thread-3 (]: On model.turing_sales.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_orders"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_orders`
+  OPTIONS()
+  as with
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+orders as (
+
+select distinct
+    Order_ID,
+    Order_Date,
+    Ship_Date,
+    Ship_Mode,
+    Customer_ID,
+    Sales as Sale_Ammount
+from source
+
+)
+
+select * from orders;
+
+
+[0m13:21:26.961502 [debug] [Thread-4 (]: On model.turing_sales.stg_products: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_products"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_products`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+products as (
+
+select distinct
+    Product_ID,
+    Category,
+    Sub_Category,
+    Product_Name
+from source
+
+)
+
+select * from products;
+
+
+[0m13:21:27.793339 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:bfb08837-7eed-48cf-bd8b-e4a1b131bca6&page=queryresults
+[0m13:21:27.826550 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:b2e808f6-73b4-4613-8fea-e8f2a060fee3&page=queryresults
+[0m13:21:27.858553 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:b5d98709-32ea-4224-a518-75e610ee813e&page=queryresults
+[0m13:21:27.892540 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:21c4c221-a6b2-4032-9d4e-4867229c0f8c&page=queryresults
+[0m13:21:28.358435 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_products (execute): 13:21:26.874574 => 13:21:28.357919
+[0m13:21:28.358435 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FAA8F490>]}
+[0m13:21:28.359440 [info ] [Thread-4 (]: 4 of 5 OK created sql view model turing_dbt_sales_dev.stg_products ............. [[32mCREATE VIEW (0 processed)[0m in 1.54s]
+[0m13:21:28.360442 [debug] [Thread-4 (]: Finished running node model.turing_sales.stg_products
+[0m13:21:28.411025 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (execute): 13:21:26.830293 => 13:21:28.411025
+[0m13:21:28.414027 [debug] [Thread-2 (]: Timing info for model.turing_sales.stg_customers (execute): 13:21:26.853451 => 13:21:28.414027
+[0m13:21:28.415032 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FA8734C0>]}
+[0m13:21:28.416027 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FBB278B0>]}
+[0m13:21:28.417026 [info ] [Thread-1 (]: 1 of 5 OK created sql view model turing_dbt_sales_dev.stg_customer_addresses ... [[32mCREATE VIEW (0 processed)[0m in 1.61s]
+[0m13:21:28.418534 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_customer_addresses
+[0m13:21:28.417026 [info ] [Thread-2 (]: 2 of 5 OK created sql view model turing_dbt_sales_dev.stg_customers ............ [[32mCREATE VIEW (0 processed)[0m in 1.61s]
+[0m13:21:28.419541 [debug] [Thread-2 (]: Finished running node model.turing_sales.stg_customers
+[0m13:21:28.428577 [debug] [Thread-3 (]: Timing info for model.turing_sales.stg_orders (execute): 13:21:26.868565 => 13:21:28.428047
+[0m13:21:28.428577 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FA885ED0>]}
+[0m13:21:28.429582 [info ] [Thread-3 (]: 3 of 5 OK created sql view model turing_dbt_sales_dev.stg_orders ............... [[32mCREATE VIEW (0 processed)[0m in 1.62s]
+[0m13:21:28.430585 [debug] [Thread-3 (]: Finished running node model.turing_sales.stg_orders
+[0m13:21:28.431583 [debug] [Thread-4 (]: Began running node model.turing_sales.fct_customer_orders
+[0m13:21:28.431583 [info ] [Thread-4 (]: 5 of 5 START sql view model turing_dbt_sales_dev.fct_customer_orders ........... [RUN]
+[0m13:21:28.432584 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.turing_sales.stg_products, now model.turing_sales.fct_customer_orders)
+[0m13:21:28.432584 [debug] [Thread-4 (]: Began compiling node model.turing_sales.fct_customer_orders
+[0m13:21:28.436585 [debug] [Thread-4 (]: Writing injected SQL for node "model.turing_sales.fct_customer_orders"
+[0m13:21:28.437584 [debug] [Thread-4 (]: Timing info for model.turing_sales.fct_customer_orders (compile): 13:21:28.433583 => 13:21:28.437584
+[0m13:21:28.438095 [debug] [Thread-4 (]: Began executing node model.turing_sales.fct_customer_orders
+[0m13:21:28.441610 [debug] [Thread-4 (]: Writing runtime sql for node "model.turing_sales.fct_customer_orders"
+[0m13:21:28.442607 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:21:28.444608 [debug] [Thread-4 (]: On model.turing_sales.fct_customer_orders: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.fct_customer_orders"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`fct_customer_orders`
+  OPTIONS()
+  as with customers as (
+
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customers`
+
+),
+
+orders as (
+
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_orders`
+
+),
+
+final as (
+    select
+        customers.Customer_ID,
+        customers.Customer_Name,
+        orders.Order_ID,
+        orders.Order_Date,
+        orders.Ship_Date,
+        orders.Ship_Mode,
+        orders.Sale_Ammount
+
+    join customers
+    on orders.Customer_ID = customers.Customer_ID
+)
+
+select * from final;
+
+
+[0m13:21:29.088547 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:db79f7dc-834a-405b-9860-227f53cf940c&page=queryresults
+[0m13:21:29.089558 [debug] [Thread-4 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got keyword JOIN at [28:5]')
+[0m13:21:29.906357 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:0c8ff060-d24c-468b-bddf-4a472c3a21a8&page=queryresults
+[0m13:21:29.906357 [error] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:0c8ff060-d24c-468b-bddf-4a472c3a21a8&page=queryresults
+[0m13:21:29.908391 [debug] [Thread-4 (]: Timing info for model.turing_sales.fct_customer_orders (execute): 13:21:28.438602 => 13:21:29.907864
+[0m13:21:29.912397 [debug] [Thread-4 (]: Database Error in model fct_customer_orders (models\marts\core\fct_customer_orders.sql)
+  Syntax error: Expected ")" but got keyword JOIN at [28:5]
+  compiled Code at target\run\turing_sales\models\marts\core\fct_customer_orders.sql
+[0m13:21:29.912397 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e7d3e2f4-6d3d-4729-ae9a-85333e364070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FA9FD5A0>]}
+[0m13:21:29.913397 [error] [Thread-4 (]: 5 of 5 ERROR creating sql view model turing_dbt_sales_dev.fct_customer_orders .. [[31mERROR[0m in 1.48s]
+[0m13:21:29.914400 [debug] [Thread-4 (]: Finished running node model.turing_sales.fct_customer_orders
+[0m13:21:29.916400 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:21:29.916400 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m13:21:29.916400 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m13:21:29.916400 [debug] [MainThread]: Connection 'model.turing_sales.stg_customer_addresses' was properly closed.
+[0m13:21:29.917907 [debug] [MainThread]: Connection 'model.turing_sales.stg_customers' was properly closed.
+[0m13:21:29.918439 [debug] [MainThread]: Connection 'model.turing_sales.stg_orders' was properly closed.
+[0m13:21:29.918439 [debug] [MainThread]: Connection 'model.turing_sales.fct_customer_orders' was properly closed.
+[0m13:21:29.918439 [info ] [MainThread]: 
+[0m13:21:29.919444 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 4.51 seconds (4.51s).
+[0m13:21:29.920445 [debug] [MainThread]: Command end result
+[0m13:21:29.942571 [info ] [MainThread]: 
+[0m13:21:29.943573 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:21:29.943573 [info ] [MainThread]: 
+[0m13:21:29.944575 [error] [MainThread]:   Database Error in model fct_customer_orders (models\marts\core\fct_customer_orders.sql)
+  Syntax error: Expected ")" but got keyword JOIN at [28:5]
+  compiled Code at target\run\turing_sales\models\marts\core\fct_customer_orders.sql
+[0m13:21:29.945573 [info ] [MainThread]: 
+[0m13:21:29.945573 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[0m13:21:29.946569 [debug] [MainThread]: Command `dbt run` failed at 13:21:29.946569 after 5.47 seconds
+[0m13:21:29.946569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0F6B2B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FA8C68C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0FA632860>]}
+[0m13:21:29.948079 [debug] [MainThread]: Flushing usage events
+[0m13:22:02.132173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013493D825C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013496BD5240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013496BD7A60>]}
+
+
+============================== 13:22:02.136170 | ae797acc-10fa-41b3-9501-52e035ec6079 ==============================
+[0m13:22:02.136170 [info ] [MainThread]: Running with dbt=1.7.4
+[0m13:22:02.137168 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:22:02.666675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000134944FBBB0>]}
+[0m13:22:02.756499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013496C081F0>]}
+[0m13:22:02.758552 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m13:22:02.766560 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m13:22:02.851579 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:22:02.852578 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\marts\core\fct_customer_orders.sql
+[0m13:22:02.989539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013497C38BB0>]}
+[0m13:22:02.998593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013497ABDAE0>]}
+[0m13:22:02.998593 [info ] [MainThread]: Found 5 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m13:22:02.999601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013497ABD810>]}
+[0m13:22:03.001608 [info ] [MainThread]: 
+[0m13:22:03.002608 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:22:03.004608 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m13:22:03.004608 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:22:03.671048 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m13:22:03.671048 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:22:04.320492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013497820D00>]}
+[0m13:22:04.321489 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:22:04.321489 [info ] [MainThread]: 
+[0m13:22:04.324489 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_customer_addresses
+[0m13:22:04.325490 [debug] [Thread-2 (]: Began running node model.turing_sales.stg_customers
+[0m13:22:04.325490 [debug] [Thread-3 (]: Began running node model.turing_sales.stg_orders
+[0m13:22:04.326489 [debug] [Thread-4 (]: Began running node model.turing_sales.stg_products
+[0m13:22:04.326489 [info ] [Thread-1 (]: 1 of 5 START sql view model turing_dbt_sales_dev.stg_customer_addresses ........ [RUN]
+[0m13:22:04.326489 [info ] [Thread-2 (]: 2 of 5 START sql view model turing_dbt_sales_dev.stg_customers ................. [RUN]
+[0m13:22:04.327999 [info ] [Thread-3 (]: 3 of 5 START sql view model turing_dbt_sales_dev.stg_orders .................... [RUN]
+[0m13:22:04.329544 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customer_addresses'
+[0m13:22:04.330540 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customers'
+[0m13:22:04.328533 [info ] [Thread-4 (]: 4 of 5 START sql view model turing_dbt_sales_dev.stg_products .................. [RUN]
+[0m13:22:04.331542 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.turing_sales.stg_orders'
+[0m13:22:04.332541 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_customer_addresses
+[0m13:22:04.332541 [debug] [Thread-2 (]: Began compiling node model.turing_sales.stg_customers
+[0m13:22:04.333542 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.turing_sales.stg_products'
+[0m13:22:04.334541 [debug] [Thread-3 (]: Began compiling node model.turing_sales.stg_orders
+[0m13:22:04.342594 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_customer_addresses"
+[0m13:22:04.346595 [debug] [Thread-2 (]: Writing injected SQL for node "model.turing_sales.stg_customers"
+[0m13:22:04.346595 [debug] [Thread-4 (]: Began compiling node model.turing_sales.stg_products
+[0m13:22:04.350109 [debug] [Thread-3 (]: Writing injected SQL for node "model.turing_sales.stg_orders"
+[0m13:22:04.353106 [debug] [Thread-4 (]: Writing injected SQL for node "model.turing_sales.stg_products"
+[0m13:22:04.354108 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (compile): 13:22:04.334541 => 13:22:04.354108
+[0m13:22:04.355109 [debug] [Thread-2 (]: Timing info for model.turing_sales.stg_customers (compile): 13:22:04.342594 => 13:22:04.355109
+[0m13:22:04.356108 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_customer_addresses
+[0m13:22:04.356108 [debug] [Thread-3 (]: Timing info for model.turing_sales.stg_orders (compile): 13:22:04.346595 => 13:22:04.356108
+[0m13:22:04.357106 [debug] [Thread-2 (]: Began executing node model.turing_sales.stg_customers
+[0m13:22:04.357106 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_products (compile): 13:22:04.350109 => 13:22:04.357106
+[0m13:22:04.387893 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_customer_addresses"
+[0m13:22:04.388420 [debug] [Thread-3 (]: Began executing node model.turing_sales.stg_orders
+[0m13:22:04.391424 [debug] [Thread-2 (]: Writing runtime sql for node "model.turing_sales.stg_customers"
+[0m13:22:04.392427 [debug] [Thread-4 (]: Began executing node model.turing_sales.stg_products
+[0m13:22:04.396426 [debug] [Thread-3 (]: Writing runtime sql for node "model.turing_sales.stg_orders"
+[0m13:22:04.400469 [debug] [Thread-4 (]: Writing runtime sql for node "model.turing_sales.stg_products"
+[0m13:22:04.401468 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:22:04.402469 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:22:04.402469 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:22:04.404468 [debug] [Thread-1 (]: On model.turing_sales.stg_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customer_addresses"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customer_addresses as (
+    select
+        row_number() over () as address_id,
+        Customer_ID,
+        Country,
+        City,
+        State,
+        Postal_Code,
+        Region
+    from (
+        select distinct
+            Customer_ID,
+            Country,
+            City,
+            State,
+            Postal_Code,
+            Region
+        from source
+    ) distinct_addresses
+)
+
+select * from customer_addresses;
+
+
+[0m13:22:04.405466 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:22:04.431130 [debug] [Thread-3 (]: On model.turing_sales.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_orders"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_orders`
+  OPTIONS()
+  as with
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+orders as (
+
+select distinct
+    Order_ID,
+    Order_Date,
+    Ship_Date,
+    Ship_Mode,
+    Customer_ID,
+    Sales as Sale_Ammount
+from source
+
+)
+
+select * from orders;
+
+
+[0m13:22:04.432130 [debug] [Thread-2 (]: On model.turing_sales.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customers"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customers`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customers as (
+
+select distinct
+    Customer_ID,
+    Customer_Name,
+    Segment
+from source
+
+)
+
+select * from customers;
+
+
+[0m13:22:04.483370 [debug] [Thread-4 (]: On model.turing_sales.stg_products: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_products"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_products`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+products as (
+
+select distinct
+    Product_ID,
+    Category,
+    Sub_Category,
+    Product_Name
+from source
+
+)
+
+select * from products;
+
+
+[0m13:22:05.346607 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:08b20562-7982-4176-af42-38b666a354ad&page=queryresults
+[0m13:22:05.346607 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:7d7f8f68-b5a3-47f9-b685-06faba3a37a6&page=queryresults
+[0m13:22:05.369262 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:d2fd81f2-b26f-4063-9598-7aea3e6b0c35&page=queryresults
+[0m13:22:05.381326 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:e37818e4-6447-469e-b5ed-c4c3fc5dad60&page=queryresults
+[0m13:22:05.893515 [debug] [Thread-2 (]: Timing info for model.turing_sales.stg_customers (execute): 13:22:04.388420 => 13:22:05.893515
+[0m13:22:05.894516 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013497AAF160>]}
+[0m13:22:05.896512 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_products (execute): 13:22:04.396426 => 13:22:05.896512
+[0m13:22:05.894516 [info ] [Thread-2 (]: 2 of 5 OK created sql view model turing_dbt_sales_dev.stg_customers ............ [[32mCREATE VIEW (0 processed)[0m in 1.56s]
+[0m13:22:05.898546 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013497C39C00>]}
+[0m13:22:05.899555 [debug] [Thread-2 (]: Finished running node model.turing_sales.stg_customers
+[0m13:22:05.900554 [info ] [Thread-4 (]: 4 of 5 OK created sql view model turing_dbt_sales_dev.stg_products ............. [[32mCREATE VIEW (0 processed)[0m in 1.57s]
+[0m13:22:05.900554 [debug] [Thread-4 (]: Finished running node model.turing_sales.stg_products
+[0m13:22:05.911593 [debug] [Thread-3 (]: Timing info for model.turing_sales.stg_orders (execute): 13:22:04.392427 => 13:22:05.911593
+[0m13:22:05.912590 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013497C39ED0>]}
+[0m13:22:05.913593 [info ] [Thread-3 (]: 3 of 5 OK created sql view model turing_dbt_sales_dev.stg_orders ............... [[32mCREATE VIEW (0 processed)[0m in 1.58s]
+[0m13:22:05.914595 [debug] [Thread-3 (]: Finished running node model.turing_sales.stg_orders
+[0m13:22:05.914595 [debug] [Thread-2 (]: Began running node model.turing_sales.fct_customer_orders
+[0m13:22:05.915596 [info ] [Thread-2 (]: 5 of 5 START sql view model turing_dbt_sales_dev.fct_customer_orders ........... [RUN]
+[0m13:22:05.916595 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.turing_sales.stg_customers, now model.turing_sales.fct_customer_orders)
+[0m13:22:05.916595 [debug] [Thread-2 (]: Began compiling node model.turing_sales.fct_customer_orders
+[0m13:22:05.921291 [debug] [Thread-2 (]: Writing injected SQL for node "model.turing_sales.fct_customer_orders"
+[0m13:22:05.922289 [debug] [Thread-2 (]: Timing info for model.turing_sales.fct_customer_orders (compile): 13:22:05.916595 => 13:22:05.922289
+[0m13:22:05.922289 [debug] [Thread-2 (]: Began executing node model.turing_sales.fct_customer_orders
+[0m13:22:05.926287 [debug] [Thread-2 (]: Writing runtime sql for node "model.turing_sales.fct_customer_orders"
+[0m13:22:05.926287 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:22:05.929333 [debug] [Thread-2 (]: On model.turing_sales.fct_customer_orders: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.fct_customer_orders"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`fct_customer_orders`
+  OPTIONS()
+  as with customers as (
+
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customers`
+
+),
+
+orders as (
+
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_orders`
+
+),
+
+final as (
+    select
+        customers.Customer_ID,
+        customers.Customer_Name,
+        orders.Order_ID,
+        orders.Order_Date,
+        orders.Ship_Date,
+        orders.Ship_Mode,
+        orders.Sale_Ammount
+    from orders
+
+    join customers
+    on orders.Customer_ID = customers.Customer_ID
+)
+
+select * from final;
+
+
+[0m13:22:05.957945 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_customer_addresses (execute): 13:22:04.358109 => 13:22:05.956438
+[0m13:22:05.958467 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013497D8EC80>]}
+[0m13:22:05.959472 [info ] [Thread-1 (]: 1 of 5 OK created sql view model turing_dbt_sales_dev.stg_customer_addresses ... [[32mCREATE VIEW (0 processed)[0m in 1.63s]
+[0m13:22:05.960476 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_customer_addresses
+[0m13:22:06.959095 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:98c2ac8e-a9d7-4f60-a84c-18b26cc5f591&page=queryresults
+[0m13:22:07.562126 [debug] [Thread-2 (]: Timing info for model.turing_sales.fct_customer_orders (execute): 13:22:05.923288 => 13:22:07.561126
+[0m13:22:07.562126 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ae797acc-10fa-41b3-9501-52e035ec6079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013498DA3D00>]}
+[0m13:22:07.563126 [info ] [Thread-2 (]: 5 of 5 OK created sql view model turing_dbt_sales_dev.fct_customer_orders ...... [[32mCREATE VIEW (0 processed)[0m in 1.65s]
+[0m13:22:07.564125 [debug] [Thread-2 (]: Finished running node model.turing_sales.fct_customer_orders
+[0m13:22:07.565127 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:22:07.566129 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m13:22:07.566129 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m13:22:07.567130 [debug] [MainThread]: Connection 'model.turing_sales.stg_customer_addresses' was properly closed.
+[0m13:22:07.567130 [debug] [MainThread]: Connection 'model.turing_sales.fct_customer_orders' was properly closed.
+[0m13:22:07.567130 [debug] [MainThread]: Connection 'model.turing_sales.stg_orders' was properly closed.
+[0m13:22:07.567130 [debug] [MainThread]: Connection 'model.turing_sales.stg_products' was properly closed.
+[0m13:22:07.568129 [info ] [MainThread]: 
+[0m13:22:07.568640 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 4.57 seconds (4.57s).
+[0m13:22:07.570647 [debug] [MainThread]: Command end result
+[0m13:22:07.594687 [info ] [MainThread]: 
+[0m13:22:07.595684 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:22:07.596685 [info ] [MainThread]: 
+[0m13:22:07.596685 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m13:22:07.598192 [debug] [MainThread]: Command `dbt run` succeeded at 13:22:07.598192 after 5.52 seconds
+[0m13:22:07.599198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013493D825C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000134978E2B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000134978E0610>]}
+[0m13:22:07.599198 [debug] [MainThread]: Flushing usage events

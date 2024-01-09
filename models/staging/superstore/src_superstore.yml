@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: superstore
+    database: turing-job-ad-project 
+    schema: turing_dbt_sales 
+    tables:
+      - name: superstore_final_dataset
