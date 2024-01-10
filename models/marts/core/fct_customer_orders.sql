@@ -10,9 +10,9 @@ orders as (
 
 ),
 
-customer_addresses as (
+order_addresses as (
 
-    select * from {{ ref ('dim_customer_addresses')}}
+    select * from {{ ref ('dim_order_addresses')}}
 
 ),
 
@@ -20,7 +20,7 @@ final as (
     select
         customers.customer_id,
         orders.order_id,
-        customer_addresses.address_id,
+        order_addresses.address_id,
         orders.order_date as order_date_id,
         orders.ship_date as ship_date_id,
         orders.product_id,
@@ -28,10 +28,10 @@ final as (
     from orders
 
     join customers
-    on orders.Customer_ID = customers.Customer_ID
+    on orders.customer_id = customers.customer_id
 
-    join customer_addresses
-    on orders.Customer_ID = customer_addresses.Customer_ID
+    join order_addresses
+    on orders.order_id = order_addresses.order_id
 )
 
 select * from final

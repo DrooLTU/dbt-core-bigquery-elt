@@ -4,10 +4,10 @@ source as (
     select * from {{ source('superstore', 'superstore_final_dataset')}}
 ),
 
-customer_addresses as (
+order_address as (
     select
         row_number() over () as address_id,
-        Customer_ID as customer_id,
+        Order_ID as order_id,
         Country as country,
         City as city,
         State as state,
@@ -15,7 +15,7 @@ customer_addresses as (
         Region as region
     from (
         select distinct
-            Customer_ID,
+            Order_ID,
             Country,
             City,
             State,
@@ -25,4 +25,4 @@ customer_addresses as (
     ) distinct_addresses
 )
 
-select * from customer_addresses
+select * from order_address
