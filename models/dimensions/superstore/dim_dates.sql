@@ -1,7 +1,7 @@
 with 
 
 source_dates as (
-    select distinct Order_Date as date_iso from {{ source('superstore', 'superstore_final_dataset')}}
+    select date_iso from {{ ref ('stg_dates')}}
 ),
 
 dates as (

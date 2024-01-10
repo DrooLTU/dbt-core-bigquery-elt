@@ -1,18 +1,18 @@
 with customers as (
 
-    select * from {{ ref ('stg_customers')}}
+    select * from {{ ref ('dim_customers')}}
 
 ),
 
 orders as (
 
-    select * from {{ ref ('stg_orders')}}
+    select * from {{ ref ('dim_orders')}}
 
 ),
 
 customer_addresses as (
 
-    select * from {{ ref ('stg_customer_addresses')}}
+    select * from {{ ref ('dim_customer_addresses')}}
 
 ),
 
@@ -23,6 +23,7 @@ final as (
         customer_addresses.address_id,
         orders.order_date as order_date_id,
         orders.ship_date as ship_date_id,
+        orders.product_id,
         orders.line_total_usd
     from orders
 

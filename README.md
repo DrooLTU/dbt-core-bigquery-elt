@@ -1,2 +1,2 @@
-## Store sales DBT & BigQuery dimentional data modelling
+## Store sales DBT & BigQuery dimensional data modelling
 
