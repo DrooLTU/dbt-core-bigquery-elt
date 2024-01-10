@@ -12,6 +12,7 @@ select distinct
     Ship_Date as ship_date,
     Ship_Mode as ship_mode,
     Customer_ID as customer_id,
+    Product_ID as product_id,
     Sales as line_total_usd
 from source
 
