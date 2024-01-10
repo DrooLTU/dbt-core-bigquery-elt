@@ -21,3 +21,5 @@ models:
       core:
         fct_customer_orders:
           +materialized: table
+    dimensions:
+      +materialized: table

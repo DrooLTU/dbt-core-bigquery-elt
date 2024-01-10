@@ -1,11 +1,18 @@
 
+  
+    
 
-  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_dates`
-  OPTIONS()
-  as with 
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_dates`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with 
 
 source_dates as (
-    select distinct Order_Date as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+    select date_iso from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_dates`
 ),
 
 dates as (
@@ -17,5 +24,6 @@ dates as (
     from source_dates
 )
 
-select * from dates;
-
+select * from dates
+    );
+  

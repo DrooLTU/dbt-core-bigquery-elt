@@ -11,19 +11,19 @@
     as (
       with customers as (
 
-    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customers`
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_customers`
 
 ),
 
 orders as (
 
-    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_orders`
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_orders`
 
 ),
 
 customer_addresses as (
 
-    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_customer_addresses`
 
 ),
 
@@ -34,6 +34,7 @@ final as (
         customer_addresses.address_id,
         orders.order_date as order_date_id,
         orders.ship_date as ship_date_id,
+        orders.product_id,
         orders.line_total_usd
     from orders
 

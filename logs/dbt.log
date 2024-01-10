@@ -5701,3 +5701,1188 @@ select * from final
 [0m17:58:20.539125 [debug] [MainThread]: Command `dbt run` succeeded at 17:58:20.539125 after 9.97 seconds
 [0m17:58:20.540125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA7429B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA79314B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA77D15030>]}
 [0m17:58:20.540125 [debug] [MainThread]: Flushing usage events
+[0m19:58:12.755061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6A8D2590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6D726BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6D727A30>]}
+
+
+============================== 19:58:12.760071 | a0c0baba-385c-469a-aa72-dd4653d6336a ==============================
+[0m19:58:12.760071 [info ] [MainThread]: Running with dbt=1.7.4
+[0m19:58:12.761069 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'version_check': 'True', 'debug': 'False', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m19:58:13.308871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6D6D3DC0>]}
+[0m19:58:13.395640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6CC88760>]}
+[0m19:58:13.396652 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m19:58:13.405683 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m19:58:13.420740 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m19:58:13.421738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E339690>]}
+[0m19:58:14.630760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E89C0D0>]}
+[0m19:58:14.640800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E89C070>]}
+[0m19:58:14.641797 [info ] [MainThread]: Found 8 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m19:58:14.641797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E89C1F0>]}
+[0m19:58:14.643798 [info ] [MainThread]: 
+[0m19:58:14.644799 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:58:14.646819 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m19:58:14.647817 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:58:16.008992 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m19:58:16.008992 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:58:16.874751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E89F2E0>]}
+[0m19:58:16.874751 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:58:16.875845 [info ] [MainThread]: 
+[0m19:58:16.879853 [debug] [Thread-1 (]: Began running node model.turing_sales.dim_customers
+[0m19:58:16.879853 [debug] [Thread-2 (]: Began running node model.turing_sales.dim_orders
+[0m19:58:16.880851 [debug] [Thread-3 (]: Began running node model.turing_sales.dim_products
+[0m19:58:16.881852 [debug] [Thread-4 (]: Began running node model.turing_sales.stg_customer_addresses
+[0m19:58:16.880851 [info ] [Thread-1 (]: 1 of 8 START sql table model turing_dbt_sales_dev.dim_customers ................ [RUN]
+[0m19:58:16.882854 [info ] [Thread-2 (]: 2 of 8 START sql table model turing_dbt_sales_dev.dim_orders ................... [RUN]
+[0m19:58:16.884855 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.dim_customers'
+[0m19:58:16.882854 [info ] [Thread-3 (]: 3 of 8 START sql table model turing_dbt_sales_dev.dim_products ................. [RUN]
+[0m19:58:16.885360 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.turing_sales.dim_orders'
+[0m19:58:16.885869 [debug] [Thread-1 (]: Began compiling node model.turing_sales.dim_customers
+[0m19:58:16.883852 [info ] [Thread-4 (]: 4 of 8 START sql view model turing_dbt_sales_dev.stg_customer_addresses ........ [RUN]
+[0m19:58:16.886880 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.turing_sales.dim_products'
+[0m19:58:16.887874 [debug] [Thread-2 (]: Began compiling node model.turing_sales.dim_orders
+[0m19:58:16.895887 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.dim_customers"
+[0m19:58:16.896896 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customer_addresses'
+[0m19:58:16.897895 [debug] [Thread-3 (]: Began compiling node model.turing_sales.dim_products
+[0m19:58:16.899892 [debug] [Thread-2 (]: Writing injected SQL for node "model.turing_sales.dim_orders"
+[0m19:58:16.900893 [debug] [Thread-4 (]: Began compiling node model.turing_sales.stg_customer_addresses
+[0m19:58:16.903897 [debug] [Thread-3 (]: Writing injected SQL for node "model.turing_sales.dim_products"
+[0m19:58:16.907206 [debug] [Thread-4 (]: Writing injected SQL for node "model.turing_sales.stg_customer_addresses"
+[0m19:58:16.908209 [debug] [Thread-1 (]: Timing info for model.turing_sales.dim_customers (compile): 19:58:16.887874 => 19:58:16.908209
+[0m19:58:16.909208 [debug] [Thread-1 (]: Began executing node model.turing_sales.dim_customers
+[0m19:58:16.936334 [debug] [Thread-2 (]: Timing info for model.turing_sales.dim_orders (compile): 19:58:16.897895 => 19:58:16.936334
+[0m19:58:16.950190 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.dim_customers"
+[0m19:58:16.951189 [debug] [Thread-2 (]: Began executing node model.turing_sales.dim_orders
+[0m19:58:16.951189 [debug] [Thread-3 (]: Timing info for model.turing_sales.dim_products (compile): 19:58:16.900893 => 19:58:16.951189
+[0m19:58:16.952194 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_customer_addresses (compile): 19:58:16.904894 => 19:58:16.952194
+[0m19:58:16.956700 [debug] [Thread-2 (]: Writing runtime sql for node "model.turing_sales.dim_orders"
+[0m19:58:16.956700 [debug] [Thread-3 (]: Began executing node model.turing_sales.dim_products
+[0m19:58:16.957700 [debug] [Thread-4 (]: Began executing node model.turing_sales.stg_customer_addresses
+[0m19:58:16.957700 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:58:16.961701 [debug] [Thread-3 (]: Writing runtime sql for node "model.turing_sales.dim_products"
+[0m19:58:16.981882 [debug] [Thread-4 (]: Writing runtime sql for node "model.turing_sales.stg_customer_addresses"
+[0m19:58:16.982881 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:58:16.983880 [debug] [Thread-1 (]: On model.turing_sales.dim_customers: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_customers"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customers as (
+
+select distinct
+    Customer_ID as customer_id,
+    Customer_Name as customer_name,
+    Segment as segment
+from source
+
+)
+
+select * from customers
+    );
+  
+[0m19:58:16.984878 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:58:16.985911 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:58:17.012018 [debug] [Thread-2 (]: On model.turing_sales.dim_orders: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_orders"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+orders as (
+
+select distinct
+    Order_ID as order_id,
+    Order_Date as order_date,
+    Ship_Date as ship_date,
+    Ship_Mode as ship_mode,
+    Customer_ID as customer_id,
+    Sales as line_total_usd
+from source
+
+)
+
+select * from orders
+    );
+  
+[0m19:58:17.040623 [debug] [Thread-3 (]: On model.turing_sales.dim_products: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_products"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_products`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+products as (
+
+select distinct
+    Product_ID as product_id,
+    Category as category,
+    Sub_Category as sub_category,
+    Product_Name as product_name
+from source
+
+)
+
+select * from products
+    );
+  
+[0m19:58:17.041624 [debug] [Thread-4 (]: On model.turing_sales.stg_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customer_addresses"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customer_addresses as (
+    select
+        row_number() over () as address_id,
+        Customer_ID as customer_id,
+        Country as country,
+        City as city,
+        State as state,
+        Postal_Code as postal_code,
+        Region as region
+    from (
+        select distinct
+            Customer_ID,
+            Country,
+            City,
+            State,
+            Postal_Code,
+            Region
+        from source
+    ) distinct_addresses
+)
+
+select * from customer_addresses;
+
+
+[0m19:58:18.217867 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:91af1f66-76c2-4267-9812-a12b184ecf2c&page=queryresults
+[0m19:58:18.303823 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:1a78dbbd-2baf-4919-84dc-6e4f2d6778b7&page=queryresults
+[0m19:58:18.309781 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:c2cbff80-5ef0-4a09-8507-e1e29bad0104&page=queryresults
+[0m19:58:18.347852 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:576c344d-c5af-4061-97f7-9aa422f51d39&page=queryresults
+[0m19:58:18.905008 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_customer_addresses (execute): 19:58:16.961701 => 19:58:18.905008
+[0m19:58:18.906077 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E8AE9B0>]}
+[0m19:58:18.906077 [info ] [Thread-4 (]: 4 of 8 OK created sql view model turing_dbt_sales_dev.stg_customer_addresses ... [[32mCREATE VIEW (0 processed)[0m in 2.01s]
+[0m19:58:18.907084 [debug] [Thread-4 (]: Finished running node model.turing_sales.stg_customer_addresses
+[0m19:58:18.908084 [debug] [Thread-4 (]: Began running node model.turing_sales.stg_dates
+[0m19:58:18.908084 [info ] [Thread-4 (]: 5 of 8 START sql view model turing_dbt_sales_dev.stg_dates ..................... [RUN]
+[0m19:58:18.909083 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.turing_sales.stg_customer_addresses, now model.turing_sales.stg_dates)
+[0m19:58:18.910086 [debug] [Thread-4 (]: Began compiling node model.turing_sales.stg_dates
+[0m19:58:18.913083 [debug] [Thread-4 (]: Writing injected SQL for node "model.turing_sales.stg_dates"
+[0m19:58:18.914083 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_dates (compile): 19:58:18.910086 => 19:58:18.914083
+[0m19:58:18.915084 [debug] [Thread-4 (]: Began executing node model.turing_sales.stg_dates
+[0m19:58:18.921697 [debug] [Thread-4 (]: Writing runtime sql for node "model.turing_sales.stg_dates"
+[0m19:58:18.922699 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:58:18.923702 [debug] [Thread-4 (]: On model.turing_sales.stg_dates: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_dates"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_dates`
+  OPTIONS()
+  as with 
+
+source_dates as (
+    select CONCAT(Order_Date, Ship_Date) as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+dates as (
+    select
+        date_iso
+    from source_dates
+)
+
+select distinct * from dates;
+
+
+[0m19:58:20.101809 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:6257068e-5efa-4736-a96d-2db8fe2eb4d1&page=queryresults
+[0m19:58:20.723668 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_dates (execute): 19:58:18.915084 => 19:58:20.723668
+[0m19:58:20.725777 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6F9F8F40>]}
+[0m19:58:20.725777 [info ] [Thread-4 (]: 5 of 8 OK created sql view model turing_dbt_sales_dev.stg_dates ................ [[32mCREATE VIEW (0 processed)[0m in 1.82s]
+[0m19:58:20.726709 [debug] [Thread-4 (]: Finished running node model.turing_sales.stg_dates
+[0m19:58:20.727709 [debug] [Thread-4 (]: Began running node model.turing_sales.dim_customer_addresses
+[0m19:58:20.727709 [info ] [Thread-4 (]: 6 of 8 START sql table model turing_dbt_sales_dev.dim_customer_addresses ....... [RUN]
+[0m19:58:20.729214 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.turing_sales.stg_dates, now model.turing_sales.dim_customer_addresses)
+[0m19:58:20.729214 [debug] [Thread-4 (]: Began compiling node model.turing_sales.dim_customer_addresses
+[0m19:58:20.735219 [debug] [Thread-4 (]: Writing injected SQL for node "model.turing_sales.dim_customer_addresses"
+[0m19:58:20.735724 [debug] [Thread-4 (]: Timing info for model.turing_sales.dim_customer_addresses (compile): 19:58:20.729214 => 19:58:20.735724
+[0m19:58:20.736730 [debug] [Thread-4 (]: Began executing node model.turing_sales.dim_customer_addresses
+[0m19:58:20.739729 [debug] [Thread-4 (]: Writing runtime sql for node "model.turing_sales.dim_customer_addresses"
+[0m19:58:20.740731 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:58:20.741730 [debug] [Thread-4 (]: On model.turing_sales.dim_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_customer_addresses"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_customer_addresses`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with 
+
+addresses as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+),
+
+select * from addresses
+    );
+  
+[0m19:58:20.769819 [debug] [Thread-3 (]: Timing info for model.turing_sales.dim_products (execute): 19:58:16.958703 => 19:58:20.769819
+[0m19:58:20.771821 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E8AED40>]}
+[0m19:58:20.772818 [info ] [Thread-3 (]: 3 of 8 OK created sql table model turing_dbt_sales_dev.dim_products ............ [[32mCREATE TABLE (1.9k rows, 763.7 KiB processed)[0m in 3.88s]
+[0m19:58:20.773820 [debug] [Thread-3 (]: Finished running node model.turing_sales.dim_products
+[0m19:58:20.774819 [debug] [Thread-3 (]: Began running node model.turing_sales.dim_dates
+[0m19:58:20.775894 [info ] [Thread-3 (]: 7 of 8 START sql table model turing_dbt_sales_dev.dim_dates .................... [RUN]
+[0m19:58:20.776901 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.turing_sales.dim_products, now model.turing_sales.dim_dates)
+[0m19:58:20.776901 [debug] [Thread-3 (]: Began compiling node model.turing_sales.dim_dates
+[0m19:58:20.780900 [debug] [Thread-3 (]: Writing injected SQL for node "model.turing_sales.dim_dates"
+[0m19:58:20.781901 [debug] [Thread-3 (]: Timing info for model.turing_sales.dim_dates (compile): 19:58:20.776901 => 19:58:20.780900
+[0m19:58:20.781901 [debug] [Thread-3 (]: Began executing node model.turing_sales.dim_dates
+[0m19:58:20.785988 [debug] [Thread-3 (]: Writing runtime sql for node "model.turing_sales.dim_dates"
+[0m19:58:20.786995 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:58:20.788999 [debug] [Thread-3 (]: On model.turing_sales.dim_dates: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_dates"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_dates`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with 
+
+source_dates as (
+    select date_iso from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_dates`
+),
+
+dates as (
+    select
+        date_iso,
+        extract(year from date_iso) as year,
+        extract(month from date_iso) as month,
+        extract(day from date_iso) as day
+    from source_dates
+)
+
+select * from dates
+    );
+  
+[0m19:58:21.078931 [debug] [Thread-1 (]: Timing info for model.turing_sales.dim_customers (execute): 19:58:16.909208 => 19:58:21.077926
+[0m19:58:21.079932 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E8AED10>]}
+[0m19:58:21.079932 [info ] [Thread-1 (]: 1 of 8 OK created sql table model turing_dbt_sales_dev.dim_customers ........... [[32mCREATE TABLE (793.0 rows, 342.6 KiB processed)[0m in 4.20s]
+[0m19:58:21.080931 [debug] [Thread-1 (]: Finished running node model.turing_sales.dim_customers
+[0m19:58:21.245769 [debug] [Thread-2 (]: Timing info for model.turing_sales.dim_orders (execute): 19:58:16.953193 => 19:58:21.245769
+[0m19:58:21.246778 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E8AE830>]}
+[0m19:58:21.246778 [info ] [Thread-2 (]: 2 of 8 OK created sql table model turing_dbt_sales_dev.dim_orders .............. [[32mCREATE TABLE (9.8k rows, 620.4 KiB processed)[0m in 4.36s]
+[0m19:58:21.248787 [debug] [Thread-2 (]: Finished running node model.turing_sales.dim_orders
+[0m19:58:21.690638 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:471c7bc2-bf0e-489a-81c7-e2f9db62a75d&page=queryresults
+[0m19:58:21.691639 [debug] [Thread-4 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Trailing comma after the WITH clause before the main query is not allowed at [19:1]')
+[0m19:58:22.057771 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:34380857-20f0-4577-8ee4-24ac38701130&page=queryresults
+[0m19:58:22.612054 [debug] [Thread-3 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('No matching signature for function EXTRACT for argument types: DATE_TIME_PART FROM STRING. Supported signatures: EXTRACT(DATE_TIME_PART FROM DATE); EXTRACT(DATE_TIME_PART FROM TIMESTAMP [AT TIME ZONE STRING]); EXTRACT(DATE_TIME_PART FROM DATETIME); EXTRACT(DATE_TIME_PART FROM TIME); EXTRACT(DATE_TIME_PART FROM INTERVAL) at [22:9]')
+[0m19:58:22.880099 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:0a114356-1f00-4c55-b4c9-fb6cfde4732f&page=queryresults
+[0m19:58:22.880099 [error] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:0a114356-1f00-4c55-b4c9-fb6cfde4732f&page=queryresults
+[0m19:58:22.881098 [debug] [Thread-4 (]: Timing info for model.turing_sales.dim_customer_addresses (execute): 19:58:20.736730 => 19:58:22.881098
+[0m19:58:22.886109 [debug] [Thread-4 (]: Database Error in model dim_customer_addresses (models\dimensions\superstore\dim_customer_addresses.sql)
+  Syntax error: Trailing comma after the WITH clause before the main query is not allowed at [19:1]
+  compiled Code at target\run\turing_sales\models\dimensions\superstore\dim_customer_addresses.sql
+[0m19:58:22.887119 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6FA03C10>]}
+[0m19:58:22.887119 [error] [Thread-4 (]: 6 of 8 ERROR creating sql table model turing_dbt_sales_dev.dim_customer_addresses  [[31mERROR[0m in 2.16s]
+[0m19:58:22.888115 [debug] [Thread-4 (]: Finished running node model.turing_sales.dim_customer_addresses
+[0m19:58:22.889117 [debug] [Thread-1 (]: Began running node model.turing_sales.fct_customer_orders
+[0m19:58:22.890120 [info ] [Thread-1 (]: 8 of 8 SKIP relation turing_dbt_sales_dev.fct_customer_orders .................. [[33mSKIP[0m]
+[0m19:58:22.891117 [debug] [Thread-1 (]: Finished running node model.turing_sales.fct_customer_orders
+[0m19:58:23.530348 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:837d60b1-2929-4c02-b89d-9700dc4da447&page=queryresults
+[0m19:58:24.064774 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:837d60b1-2929-4c02-b89d-9700dc4da447&page=queryresults
+[0m19:58:24.065678 [debug] [Thread-3 (]: Timing info for model.turing_sales.dim_dates (execute): 19:58:20.781901 => 19:58:24.064774
+[0m19:58:24.066687 [debug] [Thread-3 (]: Database Error in model dim_dates (models\dimensions\superstore\dim_dates.sql)
+  No matching signature for function EXTRACT for argument types: DATE_TIME_PART FROM STRING. Supported signatures: EXTRACT(DATE_TIME_PART FROM DATE); EXTRACT(DATE_TIME_PART FROM TIMESTAMP [AT TIME ZONE STRING]); EXTRACT(DATE_TIME_PART FROM DATETIME); EXTRACT(DATE_TIME_PART FROM TIME); EXTRACT(DATE_TIME_PART FROM INTERVAL) at [22:9]
+  compiled Code at target\run\turing_sales\models\dimensions\superstore\dim_dates.sql
+[0m19:58:24.067685 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a0c0baba-385c-469a-aa72-dd4653d6336a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E8AF760>]}
+[0m19:58:24.068686 [error] [Thread-3 (]: 7 of 8 ERROR creating sql table model turing_dbt_sales_dev.dim_dates ........... [[31mERROR[0m in 3.29s]
+[0m19:58:24.069684 [debug] [Thread-3 (]: Finished running node model.turing_sales.dim_dates
+[0m19:58:24.071686 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:58:24.071686 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m19:58:24.071686 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m19:58:24.072687 [debug] [MainThread]: Connection 'model.turing_sales.dim_customers' was properly closed.
+[0m19:58:24.072687 [debug] [MainThread]: Connection 'model.turing_sales.dim_orders' was properly closed.
+[0m19:58:24.072687 [debug] [MainThread]: Connection 'model.turing_sales.dim_dates' was properly closed.
+[0m19:58:24.073686 [debug] [MainThread]: Connection 'model.turing_sales.dim_customer_addresses' was properly closed.
+[0m19:58:24.073686 [info ] [MainThread]: 
+[0m19:58:24.073686 [info ] [MainThread]: Finished running 2 view models, 6 table models in 0 hours 0 minutes and 9.43 seconds (9.43s).
+[0m19:58:24.076758 [debug] [MainThread]: Command end result
+[0m19:58:24.087848 [info ] [MainThread]: 
+[0m19:58:24.088849 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m19:58:24.088849 [info ] [MainThread]: 
+[0m19:58:24.089849 [error] [MainThread]:   Database Error in model dim_customer_addresses (models\dimensions\superstore\dim_customer_addresses.sql)
+  Syntax error: Trailing comma after the WITH clause before the main query is not allowed at [19:1]
+  compiled Code at target\run\turing_sales\models\dimensions\superstore\dim_customer_addresses.sql
+[0m19:58:24.089849 [info ] [MainThread]: 
+[0m19:58:24.090849 [error] [MainThread]:   Database Error in model dim_dates (models\dimensions\superstore\dim_dates.sql)
+  No matching signature for function EXTRACT for argument types: DATE_TIME_PART FROM STRING. Supported signatures: EXTRACT(DATE_TIME_PART FROM DATE); EXTRACT(DATE_TIME_PART FROM TIMESTAMP [AT TIME ZONE STRING]); EXTRACT(DATE_TIME_PART FROM DATETIME); EXTRACT(DATE_TIME_PART FROM TIME); EXTRACT(DATE_TIME_PART FROM INTERVAL) at [22:9]
+  compiled Code at target\run\turing_sales\models\dimensions\superstore\dim_dates.sql
+[0m19:58:24.091851 [info ] [MainThread]: 
+[0m19:58:24.093853 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=2 SKIP=1 TOTAL=8
+[0m19:58:24.094848 [debug] [MainThread]: Command `dbt run` failed at 19:58:24.094848 after 11.40 seconds
+[0m19:58:24.094848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6A8D2590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E9DDC00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA6E9DFA00>]}
+[0m19:58:24.095960 [debug] [MainThread]: Flushing usage events
+[0m19:58:59.584974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C86FB025C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C872955240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C872957A60>]}
+
+
+============================== 19:58:59.589048 | 6a7d9522-34d0-47f9-be80-701664737475 ==============================
+[0m19:58:59.589048 [info ] [MainThread]: Running with dbt=1.7.4
+[0m19:58:59.590042 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'version_check': 'True', 'debug': 'False', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:59:00.138132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C87027BBB0>]}
+[0m19:59:00.227018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8729032B0>]}
+[0m19:59:00.229018 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m19:59:00.238038 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m19:59:00.321794 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:59:00.322789 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\dimensions\superstore\dim_customer_addresses.sql
+[0m19:59:00.463248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8739DDDE0>]}
+[0m19:59:00.472286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C87384EA70>]}
+[0m19:59:00.473286 [info ] [MainThread]: Found 8 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m19:59:00.473286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C87384EA40>]}
+[0m19:59:00.475798 [info ] [MainThread]: 
+[0m19:59:00.477276 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:59:00.478277 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m19:59:00.479280 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:59:01.569072 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m19:59:01.569072 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:59:02.794961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C87384D3F0>]}
+[0m19:59:02.796136 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:59:02.796136 [info ] [MainThread]: 
+[0m19:59:02.800144 [debug] [Thread-1 (]: Began running node model.turing_sales.dim_customers
+[0m19:59:02.801147 [debug] [Thread-2 (]: Began running node model.turing_sales.dim_orders
+[0m19:59:02.801147 [debug] [Thread-3 (]: Began running node model.turing_sales.dim_products
+[0m19:59:02.802143 [debug] [Thread-4 (]: Began running node model.turing_sales.stg_customer_addresses
+[0m19:59:02.802143 [info ] [Thread-1 (]: 1 of 8 START sql table model turing_dbt_sales_dev.dim_customers ................ [RUN]
+[0m19:59:02.803143 [info ] [Thread-2 (]: 2 of 8 START sql table model turing_dbt_sales_dev.dim_orders ................... [RUN]
+[0m19:59:02.804648 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.dim_customers'
+[0m19:59:02.803143 [info ] [Thread-3 (]: 3 of 8 START sql table model turing_dbt_sales_dev.dim_products ................. [RUN]
+[0m19:59:02.805659 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.turing_sales.dim_orders'
+[0m19:59:02.806892 [debug] [Thread-1 (]: Began compiling node model.turing_sales.dim_customers
+[0m19:59:02.804648 [info ] [Thread-4 (]: 4 of 8 START sql view model turing_dbt_sales_dev.stg_customer_addresses ........ [RUN]
+[0m19:59:02.807890 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.turing_sales.dim_products'
+[0m19:59:02.807890 [debug] [Thread-2 (]: Began compiling node model.turing_sales.dim_orders
+[0m19:59:02.816920 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.dim_customers"
+[0m19:59:02.817920 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.turing_sales.stg_customer_addresses'
+[0m19:59:02.818919 [debug] [Thread-3 (]: Began compiling node model.turing_sales.dim_products
+[0m19:59:02.821917 [debug] [Thread-2 (]: Writing injected SQL for node "model.turing_sales.dim_orders"
+[0m19:59:02.822916 [debug] [Thread-4 (]: Began compiling node model.turing_sales.stg_customer_addresses
+[0m19:59:02.826686 [debug] [Thread-3 (]: Writing injected SQL for node "model.turing_sales.dim_products"
+[0m19:59:02.830691 [debug] [Thread-4 (]: Writing injected SQL for node "model.turing_sales.stg_customer_addresses"
+[0m19:59:02.831689 [debug] [Thread-1 (]: Timing info for model.turing_sales.dim_customers (compile): 19:59:02.808895 => 19:59:02.831689
+[0m19:59:02.832687 [debug] [Thread-2 (]: Timing info for model.turing_sales.dim_orders (compile): 19:59:02.818919 => 19:59:02.832687
+[0m19:59:02.832687 [debug] [Thread-1 (]: Began executing node model.turing_sales.dim_customers
+[0m19:59:02.833687 [debug] [Thread-2 (]: Began executing node model.turing_sales.dim_orders
+[0m19:59:02.834687 [debug] [Thread-3 (]: Timing info for model.turing_sales.dim_products (compile): 19:59:02.822916 => 19:59:02.833687
+[0m19:59:02.834687 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_customer_addresses (compile): 19:59:02.826686 => 19:59:02.834687
+[0m19:59:02.852460 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:59:02.855975 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:59:02.857067 [debug] [Thread-3 (]: Began executing node model.turing_sales.dim_products
+[0m19:59:02.857067 [debug] [Thread-4 (]: Began executing node model.turing_sales.stg_customer_addresses
+[0m19:59:02.861068 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:59:02.915638 [debug] [Thread-4 (]: Writing runtime sql for node "model.turing_sales.stg_customer_addresses"
+[0m19:59:02.970752 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:59:02.972752 [debug] [Thread-4 (]: On model.turing_sales.stg_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_customer_addresses"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+  OPTIONS()
+  as with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customer_addresses as (
+    select
+        row_number() over () as address_id,
+        Customer_ID as customer_id,
+        Country as country,
+        City as city,
+        State as state,
+        Postal_Code as postal_code,
+        Region as region
+    from (
+        select distinct
+            Customer_ID,
+            Country,
+            City,
+            State,
+            Postal_Code,
+            Region
+        from source
+    ) distinct_addresses
+)
+
+select * from customer_addresses;
+
+
+[0m19:59:03.981013 [debug] [Thread-2 (]: Writing runtime sql for node "model.turing_sales.dim_orders"
+[0m19:59:03.983014 [debug] [Thread-3 (]: Writing runtime sql for node "model.turing_sales.dim_products"
+[0m19:59:03.984014 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.dim_customers"
+[0m19:59:03.985014 [debug] [Thread-2 (]: On model.turing_sales.dim_orders: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_orders"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+orders as (
+
+select distinct
+    Order_ID as order_id,
+    Order_Date as order_date,
+    Ship_Date as ship_date,
+    Ship_Mode as ship_mode,
+    Customer_ID as customer_id,
+    Sales as line_total_usd
+from source
+
+)
+
+select * from orders
+    );
+  
+[0m19:59:03.986064 [debug] [Thread-3 (]: On model.turing_sales.dim_products: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_products"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_products`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+products as (
+
+select distinct
+    Product_ID as product_id,
+    Category as category,
+    Sub_Category as sub_category,
+    Product_Name as product_name
+from source
+
+)
+
+select * from products
+    );
+  
+[0m19:59:03.988074 [debug] [Thread-1 (]: On model.turing_sales.dim_customers: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_customers"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with 
+
+source as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+customers as (
+
+select distinct
+    Customer_ID as customer_id,
+    Customer_Name as customer_name,
+    Segment as segment
+from source
+
+)
+
+select * from customers
+    );
+  
+[0m19:59:04.910993 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:ee0db527-6d13-471e-8c23-62a173b3581d&page=queryresults
+[0m19:59:04.917010 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:4b4710d1-22b6-49ca-90d4-e4944ae608f6&page=queryresults
+[0m19:59:04.923007 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:d97cdc84-4227-4841-aaab-68a662d30154&page=queryresults
+[0m19:59:04.929064 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:c747c503-9983-41c9-86ee-436130daa7e8&page=queryresults
+[0m19:59:05.621817 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_customer_addresses (execute): 19:59:02.862069 => 19:59:05.621817
+[0m19:59:05.622817 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8739DEF20>]}
+[0m19:59:05.623820 [info ] [Thread-4 (]: 4 of 8 OK created sql view model turing_dbt_sales_dev.stg_customer_addresses ... [[32mCREATE VIEW (0 processed)[0m in 2.80s]
+[0m19:59:05.624815 [debug] [Thread-4 (]: Finished running node model.turing_sales.stg_customer_addresses
+[0m19:59:05.624815 [debug] [Thread-4 (]: Began running node model.turing_sales.stg_dates
+[0m19:59:05.626003 [info ] [Thread-4 (]: 5 of 8 START sql view model turing_dbt_sales_dev.stg_dates ..................... [RUN]
+[0m19:59:05.627010 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.turing_sales.stg_customer_addresses, now model.turing_sales.stg_dates)
+[0m19:59:05.627010 [debug] [Thread-4 (]: Began compiling node model.turing_sales.stg_dates
+[0m19:59:05.630009 [debug] [Thread-4 (]: Writing injected SQL for node "model.turing_sales.stg_dates"
+[0m19:59:05.631010 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_dates (compile): 19:59:05.627010 => 19:59:05.631010
+[0m19:59:05.631010 [debug] [Thread-4 (]: Began executing node model.turing_sales.stg_dates
+[0m19:59:05.637030 [debug] [Thread-4 (]: Writing runtime sql for node "model.turing_sales.stg_dates"
+[0m19:59:05.638026 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:59:05.640025 [debug] [Thread-4 (]: On model.turing_sales.stg_dates: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_dates"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_dates`
+  OPTIONS()
+  as with 
+
+source_dates as (
+    select CONCAT(Order_Date, Ship_Date) as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+dates as (
+    select
+        date_iso
+    from source_dates
+)
+
+select distinct * from dates;
+
+
+[0m19:59:07.030068 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:4d8670fc-4084-42c8-99a3-1e44155f1d67&page=queryresults
+[0m19:59:07.034577 [debug] [Thread-2 (]: Timing info for model.turing_sales.dim_orders (execute): 19:59:02.853458 => 19:59:07.034577
+[0m19:59:07.037133 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C874B28250>]}
+[0m19:59:07.038142 [info ] [Thread-2 (]: 2 of 8 OK created sql table model turing_dbt_sales_dev.dim_orders .............. [[32mCREATE TABLE (9.8k rows, 620.4 KiB processed)[0m in 4.23s]
+[0m19:59:07.041142 [debug] [Thread-2 (]: Finished running node model.turing_sales.dim_orders
+[0m19:59:07.042142 [debug] [Thread-2 (]: Began running node model.turing_sales.dim_customer_addresses
+[0m19:59:07.043140 [info ] [Thread-2 (]: 6 of 8 START sql table model turing_dbt_sales_dev.dim_customer_addresses ....... [RUN]
+[0m19:59:07.046170 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.turing_sales.dim_orders, now model.turing_sales.dim_customer_addresses)
+[0m19:59:07.046170 [debug] [Thread-2 (]: Began compiling node model.turing_sales.dim_customer_addresses
+[0m19:59:07.051916 [debug] [Thread-2 (]: Writing injected SQL for node "model.turing_sales.dim_customer_addresses"
+[0m19:59:07.053706 [debug] [Thread-2 (]: Timing info for model.turing_sales.dim_customer_addresses (compile): 19:59:07.047180 => 19:59:07.052710
+[0m19:59:07.053706 [debug] [Thread-2 (]: Began executing node model.turing_sales.dim_customer_addresses
+[0m19:59:07.058767 [debug] [Thread-2 (]: Writing runtime sql for node "model.turing_sales.dim_customer_addresses"
+[0m19:59:07.060769 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:59:07.062767 [debug] [Thread-2 (]: On model.turing_sales.dim_customer_addresses: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_customer_addresses"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_customer_addresses`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with 
+
+addresses as (
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+)
+
+select * from addresses
+    );
+  
+[0m19:59:07.177845 [debug] [Thread-3 (]: Timing info for model.turing_sales.dim_products (execute): 19:59:02.858067 => 19:59:07.177845
+[0m19:59:07.178845 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8739DEFB0>]}
+[0m19:59:07.179845 [info ] [Thread-3 (]: 3 of 8 OK created sql table model turing_dbt_sales_dev.dim_products ............ [[32mCREATE TABLE (1.9k rows, 763.7 KiB processed)[0m in 4.37s]
+[0m19:59:07.180844 [debug] [Thread-3 (]: Finished running node model.turing_sales.dim_products
+[0m19:59:07.650851 [debug] [Thread-1 (]: Timing info for model.turing_sales.dim_customers (execute): 19:59:02.835909 => 19:59:07.650851
+[0m19:59:07.651851 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C87382FEB0>]}
+[0m19:59:07.651851 [info ] [Thread-1 (]: 1 of 8 OK created sql table model turing_dbt_sales_dev.dim_customers ........... [[32mCREATE TABLE (793.0 rows, 342.6 KiB processed)[0m in 4.85s]
+[0m19:59:07.653160 [debug] [Thread-1 (]: Finished running node model.turing_sales.dim_customers
+[0m19:59:07.670242 [debug] [Thread-4 (]: Timing info for model.turing_sales.stg_dates (execute): 19:59:05.632009 => 19:59:07.670242
+[0m19:59:07.671242 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C873A92740>]}
+[0m19:59:07.671242 [info ] [Thread-4 (]: 5 of 8 OK created sql view model turing_dbt_sales_dev.stg_dates ................ [[32mCREATE VIEW (0 processed)[0m in 2.05s]
+[0m19:59:07.672240 [debug] [Thread-4 (]: Finished running node model.turing_sales.stg_dates
+[0m19:59:07.673241 [debug] [Thread-3 (]: Began running node model.turing_sales.dim_dates
+[0m19:59:07.673241 [info ] [Thread-3 (]: 7 of 8 START sql table model turing_dbt_sales_dev.dim_dates .................... [RUN]
+[0m19:59:07.674752 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.turing_sales.dim_products, now model.turing_sales.dim_dates)
+[0m19:59:07.675761 [debug] [Thread-3 (]: Began compiling node model.turing_sales.dim_dates
+[0m19:59:07.679280 [debug] [Thread-3 (]: Writing injected SQL for node "model.turing_sales.dim_dates"
+[0m19:59:07.679280 [debug] [Thread-3 (]: Timing info for model.turing_sales.dim_dates (compile): 19:59:07.676274 => 19:59:07.679280
+[0m19:59:07.680289 [debug] [Thread-3 (]: Began executing node model.turing_sales.dim_dates
+[0m19:59:07.683284 [debug] [Thread-3 (]: Writing runtime sql for node "model.turing_sales.dim_dates"
+[0m19:59:07.683284 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:59:07.685801 [debug] [Thread-3 (]: On model.turing_sales.dim_dates: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.dim_dates"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_dates`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with 
+
+source_dates as (
+    select date_iso from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_dates`
+),
+
+dates as (
+    select
+        date_iso,
+        extract(year from date_iso) as year,
+        extract(month from date_iso) as month,
+        extract(day from date_iso) as day
+    from source_dates
+)
+
+select * from dates
+    );
+  
+[0m19:59:08.288782 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:3391a8e4-df7f-4f0a-a94d-4c04e53c141e&page=queryresults
+[0m19:59:08.907654 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:03f00d92-78cd-46d7-bd38-99969adefeea&page=queryresults
+[0m19:59:09.512940 [debug] [Thread-3 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('No matching signature for function EXTRACT for argument types: DATE_TIME_PART FROM STRING. Supported signatures: EXTRACT(DATE_TIME_PART FROM DATE); EXTRACT(DATE_TIME_PART FROM TIMESTAMP [AT TIME ZONE STRING]); EXTRACT(DATE_TIME_PART FROM DATETIME); EXTRACT(DATE_TIME_PART FROM TIME); EXTRACT(DATE_TIME_PART FROM INTERVAL) at [22:9]')
+[0m19:59:10.470738 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:52ff277d-924c-4c8c-a19d-0b7a4d25b59e&page=queryresults
+[0m19:59:11.040087 [debug] [Thread-2 (]: Timing info for model.turing_sales.dim_customer_addresses (execute): 19:59:07.053706 => 19:59:11.040087
+[0m19:59:11.041086 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C874B29D80>]}
+[0m19:59:11.042085 [info ] [Thread-2 (]: 6 of 8 OK created sql table model turing_dbt_sales_dev.dim_customer_addresses .. [[32mCREATE TABLE (4.8k rows, 590.1 KiB processed)[0m in 4.00s]
+[0m19:59:11.043084 [debug] [Thread-2 (]: Finished running node model.turing_sales.dim_customer_addresses
+[0m19:59:11.043084 [debug] [Thread-4 (]: Began running node model.turing_sales.fct_customer_orders
+[0m19:59:11.043084 [info ] [Thread-4 (]: 8 of 8 START sql table model turing_dbt_sales_dev.fct_customer_orders .......... [RUN]
+[0m19:59:11.044589 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.turing_sales.stg_dates, now model.turing_sales.fct_customer_orders)
+[0m19:59:11.046109 [debug] [Thread-4 (]: Began compiling node model.turing_sales.fct_customer_orders
+[0m19:59:11.049115 [debug] [Thread-4 (]: Writing injected SQL for node "model.turing_sales.fct_customer_orders"
+[0m19:59:11.050114 [debug] [Thread-4 (]: Timing info for model.turing_sales.fct_customer_orders (compile): 19:59:11.046109 => 19:59:11.050114
+[0m19:59:11.050114 [debug] [Thread-4 (]: Began executing node model.turing_sales.fct_customer_orders
+[0m19:59:11.055666 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:59:11.194714 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:52ff277d-924c-4c8c-a19d-0b7a4d25b59e&page=queryresults
+[0m19:59:11.195725 [debug] [Thread-3 (]: Timing info for model.turing_sales.dim_dates (execute): 19:59:07.680289 => 19:59:11.195725
+[0m19:59:11.199743 [debug] [Thread-3 (]: Database Error in model dim_dates (models\dimensions\superstore\dim_dates.sql)
+  No matching signature for function EXTRACT for argument types: DATE_TIME_PART FROM STRING. Supported signatures: EXTRACT(DATE_TIME_PART FROM DATE); EXTRACT(DATE_TIME_PART FROM TIMESTAMP [AT TIME ZONE STRING]); EXTRACT(DATE_TIME_PART FROM DATETIME); EXTRACT(DATE_TIME_PART FROM TIME); EXTRACT(DATE_TIME_PART FROM INTERVAL) at [22:9]
+  compiled Code at target\run\turing_sales\models\dimensions\superstore\dim_dates.sql
+[0m19:59:11.200740 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C874B72F80>]}
+[0m19:59:11.201740 [error] [Thread-3 (]: 7 of 8 ERROR creating sql table model turing_dbt_sales_dev.dim_dates ........... [[31mERROR[0m in 3.53s]
+[0m19:59:11.201740 [debug] [Thread-3 (]: Finished running node model.turing_sales.dim_dates
+[0m19:59:11.813897 [debug] [Thread-4 (]: Writing runtime sql for node "model.turing_sales.fct_customer_orders"
+[0m19:59:11.814897 [debug] [Thread-4 (]: On model.turing_sales.fct_customer_orders: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.fct_customer_orders"} */
+
+  
+    
+
+    create or replace table `turing-job-ad-project`.`turing_dbt_sales_dev`.`fct_customer_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with customers as (
+
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_customers`
+
+),
+
+orders as (
+
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_orders`
+
+),
+
+customer_addresses as (
+
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`dim_customer_addresses`
+
+),
+
+final as (
+    select
+        customers.customer_id,
+        orders.order_id,
+        customer_addresses.address_id,
+        orders.order_date as order_date_id,
+        orders.ship_date as ship_date_id,
+        orders.product_id,
+        orders.line_total_usd
+    from orders
+
+    join customers
+    on orders.Customer_ID = customers.Customer_ID
+
+    join customer_addresses
+    on orders.Customer_ID = customer_addresses.Customer_ID
+)
+
+select * from final
+    );
+  
+[0m19:59:12.460810 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:218cb456-49f2-49f9-892b-0ad5783d0d48&page=queryresults
+[0m19:59:13.176977 [debug] [Thread-4 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Name product_id not found inside orders at [38:16]')
+[0m19:59:14.420835 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:0c4c08d0-2ad2-47d2-9161-0a59f14ca39e&page=queryresults
+[0m19:59:14.948937 [error] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:0c4c08d0-2ad2-47d2-9161-0a59f14ca39e&page=queryresults
+[0m19:59:14.949936 [debug] [Thread-4 (]: Timing info for model.turing_sales.fct_customer_orders (execute): 19:59:11.051118 => 19:59:14.949936
+[0m19:59:14.951936 [debug] [Thread-4 (]: Database Error in model fct_customer_orders (models\marts\core\fct_customer_orders.sql)
+  Name product_id not found inside orders at [38:16]
+  compiled Code at target\run\turing_sales\models\marts\core\fct_customer_orders.sql
+[0m19:59:14.951936 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a7d9522-34d0-47f9-be80-701664737475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C874B72860>]}
+[0m19:59:14.952935 [error] [Thread-4 (]: 8 of 8 ERROR creating sql table model turing_dbt_sales_dev.fct_customer_orders . [[31mERROR[0m in 3.91s]
+[0m19:59:14.953939 [debug] [Thread-4 (]: Finished running node model.turing_sales.fct_customer_orders
+[0m19:59:14.955768 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:59:14.956775 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m19:59:14.956775 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m19:59:14.956775 [debug] [MainThread]: Connection 'model.turing_sales.dim_customers' was properly closed.
+[0m19:59:14.956775 [debug] [MainThread]: Connection 'model.turing_sales.dim_customer_addresses' was properly closed.
+[0m19:59:14.956775 [debug] [MainThread]: Connection 'model.turing_sales.dim_dates' was properly closed.
+[0m19:59:14.958282 [debug] [MainThread]: Connection 'model.turing_sales.fct_customer_orders' was properly closed.
+[0m19:59:14.958282 [info ] [MainThread]: 
+[0m19:59:14.959291 [info ] [MainThread]: Finished running 2 view models, 6 table models in 0 hours 0 minutes and 14.48 seconds (14.48s).
+[0m19:59:14.961289 [debug] [MainThread]: Command end result
+[0m19:59:14.969876 [info ] [MainThread]: 
+[0m19:59:14.970872 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m19:59:14.970872 [info ] [MainThread]: 
+[0m19:59:14.971872 [error] [MainThread]:   Database Error in model dim_dates (models\dimensions\superstore\dim_dates.sql)
+  No matching signature for function EXTRACT for argument types: DATE_TIME_PART FROM STRING. Supported signatures: EXTRACT(DATE_TIME_PART FROM DATE); EXTRACT(DATE_TIME_PART FROM TIMESTAMP [AT TIME ZONE STRING]); EXTRACT(DATE_TIME_PART FROM DATETIME); EXTRACT(DATE_TIME_PART FROM TIME); EXTRACT(DATE_TIME_PART FROM INTERVAL) at [22:9]
+  compiled Code at target\run\turing_sales\models\dimensions\superstore\dim_dates.sql
+[0m19:59:14.971872 [info ] [MainThread]: 
+[0m19:59:14.972873 [error] [MainThread]:   Database Error in model fct_customer_orders (models\marts\core\fct_customer_orders.sql)
+  Name product_id not found inside orders at [38:16]
+  compiled Code at target\run\turing_sales\models\marts\core\fct_customer_orders.sql
+[0m19:59:14.973872 [info ] [MainThread]: 
+[0m19:59:14.973872 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=2 SKIP=0 TOTAL=8
+[0m19:59:14.976091 [debug] [MainThread]: Command `dbt run` failed at 19:59:14.974873 after 15.44 seconds
+[0m19:59:14.976091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C86FB025C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C873637670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C874B72E30>]}
+[0m19:59:14.977103 [debug] [MainThread]: Flushing usage events
+[0m20:04:04.217679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538BB0B820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538E9752D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538E976B30>]}
+
+
+============================== 20:04:04.221686 | 95b29e1d-7247-40b0-ba33-31b2601cdad4 ==============================
+[0m20:04:04.221686 [info ] [MainThread]: Running with dbt=1.7.4
+[0m20:04:04.221686 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'version_check': 'True', 'debug': 'False', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --select stg_dates', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:04:04.770055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '95b29e1d-7247-40b0-ba33-31b2601cdad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538F4BA8C0>]}
+[0m20:04:04.859902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '95b29e1d-7247-40b0-ba33-31b2601cdad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538DED00A0>]}
+[0m20:04:04.860905 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m20:04:04.868933 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m20:04:04.954249 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:04:04.955836 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_dates.sql
+[0m20:04:05.087463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '95b29e1d-7247-40b0-ba33-31b2601cdad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538F9E1720>]}
+[0m20:04:05.098514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '95b29e1d-7247-40b0-ba33-31b2601cdad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538F876350>]}
+[0m20:04:05.099515 [info ] [MainThread]: Found 8 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m20:04:05.100513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '95b29e1d-7247-40b0-ba33-31b2601cdad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538F876320>]}
+[0m20:04:05.102513 [info ] [MainThread]: 
+[0m20:04:05.103513 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:04:05.104704 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m20:04:05.105704 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:04:05.889850 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m20:04:05.890846 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:04:06.712264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '95b29e1d-7247-40b0-ba33-31b2601cdad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538F875240>]}
+[0m20:04:06.713263 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:04:06.713263 [info ] [MainThread]: 
+[0m20:04:06.717062 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_dates
+[0m20:04:06.718066 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_dates ..................... [RUN]
+[0m20:04:06.719062 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_dates'
+[0m20:04:06.720064 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_dates
+[0m20:04:06.728098 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_dates"
+[0m20:04:06.729100 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_dates (compile): 20:04:06.720064 => 20:04:06.728098
+[0m20:04:06.729100 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_dates
+[0m20:04:06.761930 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_dates"
+[0m20:04:06.761930 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:04:06.764446 [debug] [Thread-1 (]: On model.turing_sales.stg_dates: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_dates"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_dates`
+  OPTIONS()
+  as with 
+
+source_dates as (
+    select Order_Date as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+    union
+    select Ship_Date as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+),
+
+dates as (
+    select
+        date_iso
+    from source_dates
+)
+
+select distinct * from dates;
+
+
+[0m20:04:07.833811 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:8083e096-3dd1-4c0e-9a2a-bfd00b3ecc35&page=queryresults
+[0m20:04:07.834823 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]')
+[0m20:04:09.114290 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:d3b55017-55c9-435d-a9f9-7fbebeaced7b&page=queryresults
+[0m20:04:09.115800 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:d3b55017-55c9-435d-a9f9-7fbebeaced7b&page=queryresults
+[0m20:04:09.116808 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_dates (execute): 20:04:06.729100 => 20:04:09.115800
+[0m20:04:09.119806 [debug] [Thread-1 (]: Database Error in model stg_dates (models\staging\superstore\stg_dates.sql)
+  Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]
+  compiled Code at target\run\turing_sales\models\staging\superstore\stg_dates.sql
+[0m20:04:09.120807 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '95b29e1d-7247-40b0-ba33-31b2601cdad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538F9E2320>]}
+[0m20:04:09.120807 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model turing_dbt_sales_dev.stg_dates ............ [[31mERROR[0m in 2.40s]
+[0m20:04:09.121808 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_dates
+[0m20:04:09.124329 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:04:09.124329 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m20:04:09.124329 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m20:04:09.124329 [debug] [MainThread]: Connection 'model.turing_sales.stg_dates' was properly closed.
+[0m20:04:09.125834 [info ] [MainThread]: 
+[0m20:04:09.125834 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.02 seconds (4.02s).
+[0m20:04:09.126840 [debug] [MainThread]: Command end result
+[0m20:04:09.134352 [info ] [MainThread]: 
+[0m20:04:09.135859 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m20:04:09.136870 [info ] [MainThread]: 
+[0m20:04:09.137869 [error] [MainThread]:   Database Error in model stg_dates (models\staging\superstore\stg_dates.sql)
+  Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]
+  compiled Code at target\run\turing_sales\models\staging\superstore\stg_dates.sql
+[0m20:04:09.138870 [info ] [MainThread]: 
+[0m20:04:09.139867 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m20:04:09.140866 [debug] [MainThread]: Command `dbt run` failed at 20:04:09.140866 after 4.97 seconds
+[0m20:04:09.141865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538BB0B820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538F695B40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538F8517B0>]}
+[0m20:04:09.141865 [debug] [MainThread]: Flushing usage events
+[0m20:05:28.209659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0A8F5B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ABDC5270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ABDC72E0>]}
+
+
+============================== 20:05:28.213165 | 98ecdfda-a505-42a8-a126-7dfc4a57607d ==============================
+[0m20:05:28.213165 [info ] [MainThread]: Running with dbt=1.7.4
+[0m20:05:28.213165 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --select stg_dates', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:05:28.754376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '98ecdfda-a505-42a8-a126-7dfc4a57607d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0A9658850>]}
+[0m20:05:28.842721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '98ecdfda-a505-42a8-a126-7dfc4a57607d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ACAE45B0>]}
+[0m20:05:28.843792 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m20:05:28.854095 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m20:05:28.937919 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:05:28.938918 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_dates.sql
+[0m20:05:29.071501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '98ecdfda-a505-42a8-a126-7dfc4a57607d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ACE35630>]}
+[0m20:05:29.081543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '98ecdfda-a505-42a8-a126-7dfc4a57607d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ACCC6320>]}
+[0m20:05:29.081543 [info ] [MainThread]: Found 8 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m20:05:29.081543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98ecdfda-a505-42a8-a126-7dfc4a57607d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ACCC61D0>]}
+[0m20:05:29.084058 [info ] [MainThread]: 
+[0m20:05:29.085059 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:05:29.086058 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m20:05:29.087109 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:05:29.741486 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m20:05:29.741486 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:05:30.665933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98ecdfda-a505-42a8-a126-7dfc4a57607d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ACCC50F0>]}
+[0m20:05:30.667311 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:05:30.667311 [info ] [MainThread]: 
+[0m20:05:30.671313 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_dates
+[0m20:05:30.671313 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_dates ..................... [RUN]
+[0m20:05:30.672817 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_dates'
+[0m20:05:30.673826 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_dates
+[0m20:05:30.681337 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_dates"
+[0m20:05:30.682845 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_dates (compile): 20:05:30.673826 => 20:05:30.682845
+[0m20:05:30.682845 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_dates
+[0m20:05:30.743953 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_dates"
+[0m20:05:30.744954 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:05:30.748481 [debug] [Thread-1 (]: On model.turing_sales.stg_dates: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_dates"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_dates`
+  OPTIONS()
+  as with 
+
+dates as (
+    select Order_Date as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+    union
+    select Ship_Date as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+)
+
+select distinct date_iso from dates;
+
+
+[0m20:05:31.614173 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:e05f5960-61df-468d-9d87-66c271a56d41&page=queryresults
+[0m20:05:31.614173 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]')
+[0m20:05:32.330983 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:79b9fbae-f115-4c23-8aa3-0c9db7ba5613&page=queryresults
+[0m20:05:32.331985 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:79b9fbae-f115-4c23-8aa3-0c9db7ba5613&page=queryresults
+[0m20:05:32.333495 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_dates (execute): 20:05:30.683853 => 20:05:32.332987
+[0m20:05:32.337014 [debug] [Thread-1 (]: Database Error in model stg_dates (models\staging\superstore\stg_dates.sql)
+  Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]
+  compiled Code at target\run\turing_sales\models\staging\superstore\stg_dates.sql
+[0m20:05:32.337014 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '98ecdfda-a505-42a8-a126-7dfc4a57607d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ACE362C0>]}
+[0m20:05:32.338013 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model turing_dbt_sales_dev.stg_dates ............ [[31mERROR[0m in 1.67s]
+[0m20:05:32.339015 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_dates
+[0m20:05:32.341017 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:05:32.341017 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m20:05:32.342015 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m20:05:32.342015 [debug] [MainThread]: Connection 'model.turing_sales.stg_dates' was properly closed.
+[0m20:05:32.342015 [info ] [MainThread]: 
+[0m20:05:32.343525 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.26 seconds (3.26s).
+[0m20:05:32.344533 [debug] [MainThread]: Command end result
+[0m20:05:32.354073 [info ] [MainThread]: 
+[0m20:05:32.354073 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m20:05:32.355582 [info ] [MainThread]: 
+[0m20:05:32.355582 [error] [MainThread]:   Database Error in model stg_dates (models\staging\superstore\stg_dates.sql)
+  Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]
+  compiled Code at target\run\turing_sales\models\staging\superstore\stg_dates.sql
+[0m20:05:32.356591 [info ] [MainThread]: 
+[0m20:05:32.357594 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m20:05:32.358588 [debug] [MainThread]: Command `dbt run` failed at 20:05:32.358588 after 4.20 seconds
+[0m20:05:32.359593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0A8F5B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ACCFF820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ACCA1600>]}
+[0m20:05:32.359593 [debug] [MainThread]: Flushing usage events
+[0m20:06:18.546815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251662F25C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251691450F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025169147130>]}
+
+
+============================== 20:06:18.550812 | 15d5b87e-6599-42ca-8067-630bad713485 ==============================
+[0m20:06:18.550812 [info ] [MainThread]: Running with dbt=1.7.4
+[0m20:06:18.551818 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'version_check': 'True', 'debug': 'False', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select stg_dates', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:06:19.106463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '15d5b87e-6599-42ca-8067-630bad713485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251690F2AD0>]}
+[0m20:06:19.196721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '15d5b87e-6599-42ca-8067-630bad713485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251686A8790>]}
+[0m20:06:19.198720 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m20:06:19.207755 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m20:06:19.292858 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:06:19.293365 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:06:19.299892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '15d5b87e-6599-42ca-8067-630bad713485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002516A07D0C0>]}
+[0m20:06:19.308443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '15d5b87e-6599-42ca-8067-630bad713485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002516A042C50>]}
+[0m20:06:19.309447 [info ] [MainThread]: Found 8 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m20:06:19.310447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '15d5b87e-6599-42ca-8067-630bad713485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002516A042C20>]}
+[0m20:06:19.311448 [info ] [MainThread]: 
+[0m20:06:19.311448 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:06:19.313960 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m20:06:19.313960 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:06:20.188587 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m20:06:20.189585 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:06:21.042753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '15d5b87e-6599-42ca-8067-630bad713485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002516A041B40>]}
+[0m20:06:21.043762 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:06:21.043762 [info ] [MainThread]: 
+[0m20:06:21.047851 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_dates
+[0m20:06:21.047851 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_dates ..................... [RUN]
+[0m20:06:21.048851 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_dates'
+[0m20:06:21.049849 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_dates
+[0m20:06:21.057888 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_dates"
+[0m20:06:21.058883 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_dates (compile): 20:06:21.049849 => 20:06:21.058883
+[0m20:06:21.058883 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_dates
+[0m20:06:21.089484 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_dates"
+[0m20:06:21.091483 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:06:21.092989 [debug] [Thread-1 (]: On model.turing_sales.stg_dates: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_dates"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_dates`
+  OPTIONS()
+  as with 
+
+dates as (
+    select Order_Date as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+    union
+    select Ship_Date as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+)
+
+select distinct date_iso from dates;
+
+
+[0m20:06:21.812669 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:fb0a1408-e498-41a6-a4ec-3230bf2545e0&page=queryresults
+[0m20:06:21.813788 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]')
+[0m20:06:22.184324 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:5ef3e3e8-ecc9-41ee-8176-0aa4d4ec9a2f&page=queryresults
+[0m20:06:22.185838 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:5ef3e3e8-ecc9-41ee-8176-0aa4d4ec9a2f&page=queryresults
+[0m20:06:22.185838 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_dates (execute): 20:06:21.059882 => 20:06:22.185838
+[0m20:06:22.190848 [debug] [Thread-1 (]: Database Error in model stg_dates (models\staging\superstore\stg_dates.sql)
+  Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]
+  compiled Code at target\run\turing_sales\models\staging\superstore\stg_dates.sql
+[0m20:06:22.190848 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '15d5b87e-6599-42ca-8067-630bad713485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002516A0FCBB0>]}
+[0m20:06:22.191848 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model turing_dbt_sales_dev.stg_dates ............ [[31mERROR[0m in 1.14s]
+[0m20:06:22.192848 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_dates
+[0m20:06:22.194371 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:06:22.195882 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m20:06:22.195882 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m20:06:22.195882 [debug] [MainThread]: Connection 'model.turing_sales.stg_dates' was properly closed.
+[0m20:06:22.196896 [info ] [MainThread]: 
+[0m20:06:22.197895 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.89 seconds (2.89s).
+[0m20:06:22.198896 [debug] [MainThread]: Command end result
+[0m20:06:22.208931 [info ] [MainThread]: 
+[0m20:06:22.209938 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m20:06:22.209938 [info ] [MainThread]: 
+[0m20:06:22.210934 [error] [MainThread]:   Database Error in model stg_dates (models\staging\superstore\stg_dates.sql)
+  Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]
+  compiled Code at target\run\turing_sales\models\staging\superstore\stg_dates.sql
+[0m20:06:22.211932 [info ] [MainThread]: 
+[0m20:06:22.211932 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m20:06:22.213441 [debug] [MainThread]: Command `dbt run` failed at 20:06:22.213441 after 3.72 seconds
+[0m20:06:22.213441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000251662F25C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025169E29600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025169E2AC50>]}
+[0m20:06:22.214448 [debug] [MainThread]: Flushing usage events
+[0m20:08:55.876739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D446CB760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D47536CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D47534520>]}
+
+
+============================== 20:08:55.880742 | 89115498-86a5-4668-a0ba-f0a66e0844f6 ==============================
+[0m20:08:55.880742 [info ] [MainThread]: Running with dbt=1.7.4
+[0m20:08:55.880742 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select stg_dates', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:08:56.460326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '89115498-86a5-4668-a0ba-f0a66e0844f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D44DC8850>]}
+[0m20:08:56.551916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '89115498-86a5-4668-a0ba-f0a66e0844f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D4806C940>]}
+[0m20:08:56.553982 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m20:08:56.563831 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m20:08:56.644588 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:08:56.644588 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_dates.sql
+[0m20:08:56.786347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '89115498-86a5-4668-a0ba-f0a66e0844f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D485B5D20>]}
+[0m20:08:56.796918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '89115498-86a5-4668-a0ba-f0a66e0844f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D48432A10>]}
+[0m20:08:56.796918 [info ] [MainThread]: Found 8 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m20:08:56.797918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '89115498-86a5-4668-a0ba-f0a66e0844f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D484328C0>]}
+[0m20:08:56.798917 [info ] [MainThread]: 
+[0m20:08:56.799916 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:08:56.801919 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m20:08:56.802426 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:08:57.778698 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m20:08:57.779698 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:08:59.117695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '89115498-86a5-4668-a0ba-f0a66e0844f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D484317E0>]}
+[0m20:08:59.118698 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:08:59.119696 [info ] [MainThread]: 
+[0m20:08:59.122203 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_dates
+[0m20:08:59.123213 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_dates ..................... [RUN]
+[0m20:08:59.124210 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_dates'
+[0m20:08:59.124210 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_dates
+[0m20:08:59.132233 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_dates"
+[0m20:08:59.133244 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_dates (compile): 20:08:59.124210 => 20:08:59.133244
+[0m20:08:59.134240 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_dates
+[0m20:08:59.166884 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_dates"
+[0m20:08:59.172992 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:08:59.173991 [debug] [Thread-1 (]: On model.turing_sales.stg_dates: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_dates"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_dates`
+  OPTIONS()
+  as with 
+
+dates as (
+    select Order_Date as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+    union
+    select Ship_Date from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+)
+
+select distinct date_iso from dates;
+
+
+[0m20:09:00.295766 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:6929dd2f-a46e-4b8f-8a0a-4f15ab96b57d&page=queryresults
+[0m20:09:00.296775 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]')
+[0m20:09:01.619142 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:be62f86b-85eb-4b0a-9a1d-141979214819&page=queryresults
+[0m20:09:01.620141 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:be62f86b-85eb-4b0a-9a1d-141979214819&page=queryresults
+[0m20:09:01.621141 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_dates (execute): 20:08:59.134240 => 20:09:01.620141
+[0m20:09:01.624205 [debug] [Thread-1 (]: Database Error in model stg_dates (models\staging\superstore\stg_dates.sql)
+  Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]
+  compiled Code at target\run\turing_sales\models\staging\superstore\stg_dates.sql
+[0m20:09:01.624205 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '89115498-86a5-4668-a0ba-f0a66e0844f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D485B67D0>]}
+[0m20:09:01.625781 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model turing_dbt_sales_dev.stg_dates ............ [[31mERROR[0m in 2.50s]
+[0m20:09:01.626718 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_dates
+[0m20:09:01.628716 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:09:01.629717 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m20:09:01.629717 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m20:09:01.629717 [debug] [MainThread]: Connection 'model.turing_sales.stg_dates' was properly closed.
+[0m20:09:01.630717 [info ] [MainThread]: 
+[0m20:09:01.630717 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.83 seconds (4.83s).
+[0m20:09:01.632225 [debug] [MainThread]: Command end result
+[0m20:09:01.640740 [info ] [MainThread]: 
+[0m20:09:01.641742 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m20:09:01.642247 [info ] [MainThread]: 
+[0m20:09:01.643254 [error] [MainThread]:   Database Error in model stg_dates (models\staging\superstore\stg_dates.sql)
+  Syntax error: Expected keyword ALL or keyword DISTINCT but got keyword SELECT at [11:5]
+  compiled Code at target\run\turing_sales\models\staging\superstore\stg_dates.sql
+[0m20:09:01.643254 [info ] [MainThread]: 
+[0m20:09:01.644256 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m20:09:01.645763 [debug] [MainThread]: Command `dbt run` failed at 20:09:01.645763 after 5.82 seconds
+[0m20:09:01.645763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D446CB760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D48188A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D48411ED0>]}
+[0m20:09:01.646770 [debug] [MainThread]: Flushing usage events
+[0m20:09:39.888413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A66DA4B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6708B2C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6708B2620>]}
+
+
+============================== 20:09:39.892442 | 8df5ac95-a1a9-4f15-be7e-9e5addcb1554 ==============================
+[0m20:09:39.892442 [info ] [MainThread]: Running with dbt=1.7.4
+[0m20:09:39.893449 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'E:\\Documents\\DE course\\M3_S2\\jukaral-DE3.2.5\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select stg_dates', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:09:40.441763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8df5ac95-a1a9-4f15-be7e-9e5addcb1554', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A66E09AFE0>]}
+[0m20:09:40.528982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8df5ac95-a1a9-4f15-be7e-9e5addcb1554', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6713EC160>]}
+[0m20:09:40.529985 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m20:09:40.538008 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m20:09:40.622937 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:09:40.623935 [debug] [MainThread]: Partial parsing: updated file: turing_sales://models\staging\superstore\stg_dates.sql
+[0m20:09:40.758862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8df5ac95-a1a9-4f15-be7e-9e5addcb1554', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A671935930>]}
+[0m20:09:40.767896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8df5ac95-a1a9-4f15-be7e-9e5addcb1554', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6717B2560>]}
+[0m20:09:40.768894 [info ] [MainThread]: Found 8 models, 1 source, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m20:09:40.769895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8df5ac95-a1a9-4f15-be7e-9e5addcb1554', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6717B2530>]}
+[0m20:09:40.770897 [info ] [MainThread]: 
+[0m20:09:40.772412 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:09:40.773423 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project'
+[0m20:09:40.774424 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:09:41.948141 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_turing-job-ad-project_turing_dbt_sales_dev'
+[0m20:09:41.949143 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:09:43.132460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8df5ac95-a1a9-4f15-be7e-9e5addcb1554', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6717B1450>]}
+[0m20:09:43.133468 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:09:43.133468 [info ] [MainThread]: 
+[0m20:09:43.136979 [debug] [Thread-1 (]: Began running node model.turing_sales.stg_dates
+[0m20:09:43.137979 [info ] [Thread-1 (]: 1 of 1 START sql view model turing_dbt_sales_dev.stg_dates ..................... [RUN]
+[0m20:09:43.138978 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.turing_sales.stg_dates'
+[0m20:09:43.138978 [debug] [Thread-1 (]: Began compiling node model.turing_sales.stg_dates
+[0m20:09:43.146817 [debug] [Thread-1 (]: Writing injected SQL for node "model.turing_sales.stg_dates"
+[0m20:09:43.147814 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_dates (compile): 20:09:43.139979 => 20:09:43.147814
+[0m20:09:43.148813 [debug] [Thread-1 (]: Began executing node model.turing_sales.stg_dates
+[0m20:09:43.180964 [debug] [Thread-1 (]: Writing runtime sql for node "model.turing_sales.stg_dates"
+[0m20:09:43.182474 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:09:43.184482 [debug] [Thread-1 (]: On model.turing_sales.stg_dates: /* {"app": "dbt", "dbt_version": "1.7.4", "profile_name": "dev-bigquery", "target_name": "dev", "node_id": "model.turing_sales.stg_dates"} */
+
+
+  create or replace view `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_dates`
+  OPTIONS()
+  as with 
+
+dates as (
+    select Order_Date as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+    union distinct
+    select Ship_Date as date_iso from `turing-job-ad-project`.`turing_dbt_sales`.`superstore_final_dataset`
+)
+
+select distinct date_iso from dates;
+
+
+[0m20:09:44.119847 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=turing-job-ad-project&j=bq:US:fa5eb576-dace-4c95-86c1-e22d9bebeb58&page=queryresults
+[0m20:09:44.933072 [debug] [Thread-1 (]: Timing info for model.turing_sales.stg_dates (execute): 20:09:43.148813 => 20:09:44.933072
+[0m20:09:44.934073 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8df5ac95-a1a9-4f15-be7e-9e5addcb1554', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6719364A0>]}
+[0m20:09:44.934073 [info ] [Thread-1 (]: 1 of 1 OK created sql view model turing_dbt_sales_dev.stg_dates ................ [[32mCREATE VIEW (0 processed)[0m in 1.80s]
+[0m20:09:44.935580 [debug] [Thread-1 (]: Finished running node model.turing_sales.stg_dates
+[0m20:09:44.937589 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:09:44.938588 [debug] [MainThread]: Connection 'list_turing-job-ad-project' was properly closed.
+[0m20:09:44.938588 [debug] [MainThread]: Connection 'list_turing-job-ad-project_turing_dbt_sales_dev' was properly closed.
+[0m20:09:44.938588 [debug] [MainThread]: Connection 'model.turing_sales.stg_dates' was properly closed.
+[0m20:09:44.939589 [info ] [MainThread]: 
+[0m20:09:44.940587 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.17 seconds (4.17s).
+[0m20:09:44.940587 [debug] [MainThread]: Command end result
+[0m20:09:44.951769 [info ] [MainThread]: 
+[0m20:09:44.952280 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:09:44.952280 [info ] [MainThread]: 
+[0m20:09:44.953288 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m20:09:44.954286 [debug] [MainThread]: Command `dbt run` succeeded at 20:09:44.954286 after 5.12 seconds
+[0m20:09:44.954286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A66DA4B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A671774790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A671791930>]}
+[0m20:09:44.955795 [debug] [MainThread]: Flushing usage events
