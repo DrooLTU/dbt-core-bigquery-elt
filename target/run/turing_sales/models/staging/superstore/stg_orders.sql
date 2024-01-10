@@ -11,12 +11,12 @@ source as (
 orders as (
 
 select distinct
-    Order_ID,
-    Order_Date,
-    Ship_Date,
-    Ship_Mode,
-    Customer_ID,
-    Sales as Sale_Ammount
+    Order_ID as order_id,
+    Order_Date as order_date,
+    Ship_Date as ship_date,
+    Ship_Mode as ship_mode,
+    Customer_ID as customer_id,
+    Sales as line_total_usd
 from source
 
 )

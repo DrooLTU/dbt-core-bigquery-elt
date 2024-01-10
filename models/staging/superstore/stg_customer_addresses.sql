@@ -7,12 +7,12 @@ source as (
 customer_addresses as (
     select
         row_number() over () as address_id,
-        Customer_ID,
-        Country,
-        City,
-        State,
-        Postal_Code,
-        Region
+        Customer_ID as customer_id,
+        Country as country,
+        City as city,
+        State as state,
+        Postal_Code as postal_code,
+        Region as region
     from (
         select distinct
             Customer_ID,

@@ -11,9 +11,9 @@ source as (
 customers as (
 
 select distinct
-    Customer_ID,
-    Customer_Name,
-    Segment
+    Customer_ID as customer_id,
+    Customer_Name as customer_name,
+    Segment as segment
 from source
 
 )

@@ -10,19 +10,27 @@ orders as (
 
 ),
 
+customer_addresses as (
+
+    select * from `turing-job-ad-project`.`turing_dbt_sales_dev`.`stg_customer_addresses`
+
+),
+
 final as (
     select
-        customers.Customer_ID,
-        customers.Customer_Name,
-        orders.Order_ID,
-        orders.Order_Date,
-        orders.Ship_Date,
-        orders.Ship_Mode,
-        orders.Sale_Ammount
+        customers.customer_id,
+        orders.order_id,
+        customer_addresses.address_id,
+        orders.order_date as order_date_id,
+        orders.ship_date as ship_date_id,
+        orders.line_total_usd
     from orders
 
     join customers
     on orders.Customer_ID = customers.Customer_ID
+
+    join customer_addresses
+    on orders.Customer_ID = customer_addresses.Customer_ID
 )
 
 select * from final
