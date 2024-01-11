@@ -7,7 +7,7 @@ source as (
 orders as (
 
 select distinct
-    Order_ID as order_id,
+    Order_ID as id,
     Order_Date as order_date,
     Ship_Date as ship_date,
     Ship_Mode as ship_mode,

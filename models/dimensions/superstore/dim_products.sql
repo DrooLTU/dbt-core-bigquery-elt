@@ -7,7 +7,7 @@ source as (
 products as (
 
 select distinct
-    Product_ID as product_id,
+    Product_ID as id,
     Category as category,
     Sub_Category as sub_category,
     Product_Name as product_name

@@ -7,7 +7,7 @@ source as (
 customers as (
 
 select distinct
-    Customer_ID as customer_id,
+    Customer_ID as id,
     Customer_Name as customer_name,
     Segment as segment
 from source

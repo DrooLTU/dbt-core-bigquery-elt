@@ -6,7 +6,7 @@ source_dates as (
 
 dates as (
     select
-        date_iso,
+        date_iso as id,
         extract(year from date_iso) as year,
         extract(month from date_iso) as month,
         extract(day from date_iso) as day

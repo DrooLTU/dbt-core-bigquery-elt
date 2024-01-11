@@ -6,7 +6,7 @@ source as (
 
 order_address as (
     select
-        row_number() over () as address_id,
+        row_number() over () as id,
         Order_ID as order_id,
         Country as country,
         City as city,
