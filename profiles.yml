@@ -7,4 +7,4 @@ dev-bigquery:
       project: turing-job-ad-project
       dataset: turing_dbt_sales_dev
       threads: 4 # Must be a value of 1 or greater
-      keyfile: ./turing-job-ad-project-a568fd18c421.json
+      keyfile: ./turing-job-ad-project-a568fd18c421.json #REPLACE WITH YOUR CREDENTIAL FILE HERE

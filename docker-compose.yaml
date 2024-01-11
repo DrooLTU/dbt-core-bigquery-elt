@@ -6,9 +6,8 @@ services:
     build:
       context: .
       target: dbt-bigquery
-    ports:
-      - "8084:8080"
     volumes:
-      - .:/project
-      - ~/.dbt:/root/.dbt
-      - ~/.google/credentials/google_credentials.json:/root/.google/credentials/google_credentials.json
+      - .:/usr/app/dbt
+      - ~/.dbt:/root/.dbt:ro
+      - ~/.google/credentials/google_credentials.json:/root/.google/credentials/google_credentials.json:ro
+    command: -d run
