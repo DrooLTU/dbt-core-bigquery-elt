@@ -15,7 +15,7 @@
 # How to use:
 
 - Make a new Google cloud project and set up BigQuery.
-- Generate a json credential file with necessary permissions (https://developers.google.com/workspace/guides/create-credentials).
+- Generate a json credential file with necessary permissions (https://cloud.google.com/bigquery/docs/use-service-accounts).
 - Place the json credentials at the root folder of the project (where this README is).
 - Update the ```profiles.yml```:
     - 'keyfile' path to mach the name of your credentials file.
@@ -27,3 +27,4 @@
 
 - If you want to execute other commands:
     - Update the ```docker-compose.yaml``` file 'command' value. Do not include 'dbt' in the command!
+- It is much easier to develop dbt by setting up a Python virtual environment.
