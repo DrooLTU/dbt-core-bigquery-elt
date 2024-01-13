@@ -4,6 +4,17 @@ source as (
     select * from {{ source('superstore', 'superstore_final_dataset')}}
 ),
 
+distinct_addresses as (
+    select distinct
+        Order_ID,
+        Country,
+        City,
+        State,
+        Postal_Code,
+        Region
+    from source
+), 
+
 order_address as (
     select
         row_number() over () as id,
@@ -13,16 +24,7 @@ order_address as (
         State as state,
         Postal_Code as postal_code,
         Region as region
-    from (
-        select distinct
-            Order_ID,
-            Country,
-            City,
-            State,
-            Postal_Code,
-            Region
-        from source
-    ) distinct_addresses
+    from distinct_addresses
 )
 
 select * from order_address
